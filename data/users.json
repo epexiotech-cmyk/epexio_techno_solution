@@ -1,0 +1,9 @@
+[
+  {
+    "id": "u1",
+    "name": "Admin User",
+    "email": "admin@epexio.in",
+    "userId": "admin",
+    "role": "SUPER_ADMIN"
+  }
+]

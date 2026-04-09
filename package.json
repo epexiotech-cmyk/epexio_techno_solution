@@ -1,0 +1,28 @@
+{
+  "name": "epexio_techno_solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:web": "browser-sync start --server --files \"index.html, style.css, src/web_pages/**/*\" --port 3000 --no-ui",
+    "dev:admin": "browser-sync start --server \"src/admin\" --files \"src/admin/**/*\" --port 3001 --routes \"/data=data\" --no-ui --index \"admin.html\"",
+    "dev": "npm-run-all --parallel dev:web dev:admin",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epexiotech-cmyk/epexio_techno_solution.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/epexiotech-cmyk/epexio_techno_solution/issues"
+  },
+  "homepage": "https://github.com/epexiotech-cmyk/epexio_techno_solution#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "npm-run-all": "^4.1.5"
+  }
+}
