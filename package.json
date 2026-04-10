@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:web": "browser-sync start --server --files \"index.html, style.css, src/web_pages/**/*\" --port 3000 --no-ui",
+    "dev:web": "browser-sync start --server src/web_pages --files \"src/web_pages/**/*\" --port 3000 --routes \"/Image=Image\" --no-ui",
     "dev:admin": "browser-sync start --server \"src/admin\" --files \"src/admin/**/*\" --port 3001 --routes \"/data=data\" --no-ui --index \"admin.html\"",
     "dev": "npm-run-all --parallel dev:web dev:admin",
     "test": "echo \"Error: no test specified\" && exit 1"

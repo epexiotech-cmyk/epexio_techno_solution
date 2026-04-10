@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Let's Build Something Amazing | Epexio Techno Solutions</title>
+  <meta name="description"
+    content="Have a project in mind? Reach out to Epexio Techno Solutions. We offer high-quality custom software and web development with 24-hour response time." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://epexio.in/Contact/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://epexio.in/Contact/" />
+  <meta property="og:title" content="Contact Us | Epexio Techno Solutions" />
+  <meta property="og:description"
+    content="Have a project in mind? Reach out to Epexio Techno Solutions for expert tech consulting and development." />
+  <meta property="og:image" content="https://epexio.in/Image/logo.png" />
+  <link rel="icon" type="image/png" href="/Image/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" style="text-decoration: none;">
+        <img src="/Image/logo.png" alt="Epexio Logo" class="logo-icon"
+          style="width: 40px; height: 40px; background: none; border-radius: 0;" />
+        <span class="logo-text" style="color: white;">Epexio<span class="accent">.</span><span
+            class="logo-text">in</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#process">Our Process</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#leadership">Leadership</a></li>
+        <li><a href="products.html">Quick Tools</a></li>
+        <li><a href="contact.html" class="accent">Contact</a></li>
+        <li><a href="#contact-form" class="btn-primary">Start Project</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Split Layout) -->
+  <section class="hero-split">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="neon-text">Let’s Build Something Amazing Together</h1>
+          <p class="hero-sub">
+            Have a project in mind? Reach out to us and we’ll get back within 24 hours.
+          </p>
+          <div class="hero-buttons" style="justify-content: flex-start;">
+            <a href="#contact-form" class="btn-primary btn-large">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="Assets/contact_illustration.png" alt="Tech Communication Illustration" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section class="contact-info-section">
+    <div class="container">
+      <div class="info-cards-grid">
+        <div class="info-card">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Phone</h3>
+          <p><a href="tel:+919016950157">+91 90169 50157</a></p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:Office@epexio.in">Office@epexio.in</a></p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Location</h3>
+          <p>
+            <a href="https://maps.google.com/?q=Epexio+Techno+Solutions,+Vadodara" target="_blank" rel="noopener noreferrer">
+              Epexio Techno Solutions,<br />Vadodara
+            </a>
+          </p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-clock"></i>
+          <h3>Working Hours</h3>
+          <p>Mon – Fri: 10 AM – 6 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Map Section -->
+  <section id="contact-form" class="section-padding bg-light">
+    <div class="container">
+      <div class="contact-split-grid">
+        <!-- Left: Contact Form -->
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h2 class="neon-text">Send Us a Message</h2>
+            <p>Fill out the form below and our team will analyze your requirements.</p>
+          </div>
+          <form action="#" method="POST" class="main-contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="custom-software">Custom Software</option>
+                  <option value="web-development">Web Development</option>
+                  <option value="tech-consulting">Tech Consulting</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn-primary btn-large btn-full">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right: Google Map -->
+        <div class="map-embed-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.3142854378!2d73.13620947594!3d22.304005942436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc9f56475654d%3A0xc3c94294ca7336f7!2sEpexio%20Techno%20Solutions!5e0!3m2!1sen!2sin!4v1712745000000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+  <!-- FAQ Section -->
+  <section class="faq-section section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="neon-text">Frequently Asked Questions</h2>
+        <p>Expert answers to your most common curiosities.</p>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What services do you offer?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>We deliver a full spectrum of digital excellence—from high-performance web applications and custom enterprise software to intuitive mobile apps and strategic tech consulting. Whether you're building a new platform or scaling an existing one, we provide the architecture and artistry to make it thrive.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How quickly do you respond?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Time is the most valuable asset in tech. We respect yours by guaranteeing a response to all inquiries within 24 hours. Our elite team is standing by to bridge the gap between your idea and its implementation with unparalleled speed.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you work with startups?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Startups are our soul. We specialize in transforming "napkin sketches" into market-ready MVPs. We provide the technical backbone and scalable roadmaps that allow founders to focus on growth while we handle the complexity of the build.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What technologies do you specialize in?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>We are polyglots in the language of innovation. Our experts master modern stacks like React, Node.js, and Python, alongside robust mobile frameworks like Flutter and Swift. We don't just use tools; we select the perfect instrument for your specific project's symphony.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you provide post-launch support?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Launching is just the beginning. We offer dedicated maintenance and evolution packages to ensure your software stays secure, fast, and competitive. Think of us as your long-term technology partners, not just developers.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How do you handle project pricing?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Transparency is our policy. We offer fixed-price models for clearly defined projects and flexible time-and-materials arrangements for agile, evolving requirements. Every cent is accounted for, ensuring you get maximum ROI on your tech investment.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can you help with legacy software modernization?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>We breathe new life into aging systems. By refactoring, re-architecting, and migrating legacy codebases to the cloud, we help you eliminate technical debt and unlock the performance of modern infrastructure without losing your business logic.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is your development process like?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Our process is a blend of Agile agility and engineering precision. It starts with deep discovery, followed by iterative design, rapid development, and exhaustive testing. We keep you in the loop at every milestone, ensuring the final product exceeds expectations.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you provide UI/UX design services?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Code without design is like a car without an interior. Our design team focuses on "User Obsession"—creating interfaces that are not only visually stunning but also psychologically intuitive, ensuring your users love every click.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How do you ensure the security of my data?</h3>
+            <span class="icon"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Security isn't a feature; it's our foundation. We implement end-to-end encryption, multi-layer authentication, and conduct rigorous vulnerability assessments to protect your intellectual property and user data from the ground up.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick CTA Strip -->
+  <section class="cta-strip">
+    <div class="container cta-container">
+      <div class="cta-content">
+        <h2 class="cta-title">Need a fast solution? <span class="accent-text">Let’s talk directly.</span></h2>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:+919016950157" class="cta-btn call-btn">
+          <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+        <a href="https://wa.me/919016950157" target="_blank" class="cta-btn whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:office@epexio.in" class="cta-btn email-btn">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo">
+          <img src="/Image/logo.png" alt="Epexio Logo" style="height: 50px; width: auto" />
+        </div>
+        <h3><span class="neon-text">Epexio Techno Solutions</span></h3>
+        <p>
+          Empowering MSMEs and startups with high-calibre, custom technology
+          solutions.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <h3>Headquarters</h3>
+        <p>
+          B-TF-7, Block - B, Third Floor, Signet Plaza<br />
+          Kunal Char Rasta, Samta - Gotri Road<br />
+          Gotri, Vadodara, Gujarat - 390021, India
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="mailto:office@epexio.in" class="contact-link">office@epexio.in</a>
+        <a href="https://www.linkedin.com/company/epexio-techno-solutions/">LinkedIn</a>
+        <a href="https://www.youtube.com/@EpexioTechnoSolution">Youtube</a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 Epexio Techno Solutions. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Accordion Toggle
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const icon = question.querySelector('.icon i');
+        
+        // Close other items
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains('active')) {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.icon i').classList.replace('fa-minus', 'fa-plus');
+          }
+        });
+        
+        // Toggle current item
+        item.classList.toggle('active');
+        if (item.classList.contains('active')) {
+          icon.classList.replace('fa-plus', 'fa-minus');
+        } else {
+          icon.classList.replace('fa-minus', 'fa-plus');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
