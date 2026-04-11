@@ -1,9 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Projects | Success Stories | Epexio Techno Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
+
 <body>
+  <!-- Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <style>
+    /* Projects Specific Hero Styles (Unique to this page) */
+    .projects-hero {
+      position: relative;
+      padding: 180px 0 100px 0;
+      text-align: center;
+      overflow: hidden;
+      background-color: #0d0d0d;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .projects-hero .hero-content {
+      position: relative;
+      z-index: 10;
+      animation: projFadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .projects-hero h1 {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .glass-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 8px 18px;
+      border-radius: 100px;
+      color: var(--accent-glow);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 30px;
+      animation: projFadeUp 0.8s ease-out;
+    }
+
+    /* Animated Background Blobs */
+    .hero-glow-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.45;
+      animation: orbFloat 20s infinite alternate ease-in-out;
+    }
+
+    .orb-cyan {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--accent), transparent 70%);
+      top: -10%;
+      left: 15%;
+    }
+
+    .orb-purple {
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, #7c3aed, transparent 70%);
+      bottom: -10%;
+      right: 10%;
+      animation-delay: -7s;
+    }
+
+    @keyframes orbFloat {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(60px, 40px) scale(1.1); }
+      100% { transform: translate(-40px, -20px) scale(0.9); }
+    }
+
+    @keyframes projFadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .floating-tech-card {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      padding: 20px;
+      border-radius: 20px;
+      z-index: 5;
+      pointer-events: none;
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      .floating-tech-card { display: block; }
+      .card-1 { top: 25%; left: 10%; transform: rotate(-10deg); animation: techFloat 8s infinite ease-in-out; }
+      .card-2 { bottom: 20%; right: 12%; transform: rotate(15deg); animation: techFloat 10s infinite ease-in-out reverse; }
+    }
+
+    @keyframes techFloat {
+      0%, 100% { transform: translateY(0) rotate(-10deg); }
+      50% { transform: translateY(-30px) rotate(-5deg); }
+    }
+
+    /* Common portfolio styles removed (now in style.css) */
+  </style>
+
+  <!-- Section 1: Premium Projects Hero -->
+  <section class="projects-hero">
+    <div class="hero-glow-container">
+      <div class="glow-orb orb-cyan"></div>
+      <div class="glow-orb orb-purple"></div>
+    </div>
+    
+    <!-- Floating Tech Accents -->
+    <div class="floating-tech-card card-1" style="width: 120px; height: 140px;">
+      <div style="width: 40px; height: 6px; background: var(--accent); border-radius: 10px; margin-bottom: 12px;"></div>
+      <div style="width: 100%; height: 2px; background: rgba(255,255,255,0.1); margin-bottom: 8px;"></div>
+      <div style="width: 80%; height: 2px; background: rgba(255,255,255,0.1); margin-bottom: 8px;"></div>
+      <div style="width: 60%; height: 2px; background: rgba(255,255,255,0.1);"></div>
+    </div>
+    <div class="floating-tech-card card-2" style="width: 160px; height: 100px;">
+      <div style="display: flex; gap: 8px; margin-bottom: 15px;">
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #ef4444;"></div>
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #fbbf24;"></div>
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #22c55e;"></div>
+      </div>
+      <div style="width: 100%; height: 4px; background: rgba(6, 182, 212, 0.3); border-radius: 10px;"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="glass-badge">
+        <i class="fa-solid fa-rocket" style="margin-right: 8px;"></i> Case Studies & Portfolio
+      </div>
+      <h1 class="neon-text">Our Work Speaks<br />For Itself</h1>
+      <p class="hero-sub" style="font-size: 1.3rem; margin-bottom: 50px;">
+        Real projects. Real results. <br />
+        Built with extreme precision and a passion for engineering excellence.
+      </p>
+      <div class="hero-buttons">
+        <a href="#portfolio-grid" class="btn-primary btn-large" style="padding: 18px 45px; font-size: 1.2rem;">
+          🚀 View Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Tabbed Project View -->
+  <section id="portfolio-grid" class="project-tabs-section">
+    <div class="container">
+      <div class="tabs-wrapper">
+        <div class="tabs-container" id="project-tabs">
+          <div class="tab-indicator" id="tab-indicator"></div>
+          <button class="tab-btn active" data-target="completed">Completed Projects</button>
+          <button class="tab-btn" data-target="ongoing">Ongoing Projects</button>
+        </div>
+      </div>
+
+      <div class="tab-content-area">
+        <!-- Completed Projects Pane -->
+        <div id="completed" class="tab-pane active">
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-card-image">
+                <div class="status-badge status-completed">
+                  <span class="pulse-dot"></span> Completed
+                </div>
+                <img src="Assets/cattle_insurance.png" alt="Cattle Insurance System">
+              </div>
+              <div class="project-card-body">
+                <h3>Cattle Management System</h3>
+                <p>An enterprise-grade platform for digital cattle tagging, KYC verification, and streamlined insurance claim processing.</p>
+                
+                <div class="card-metrics">
+                  <div class="metric-item">
+                    <span class="metric-value">10,000+</span>
+                    <span class="metric-label">Processed</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-value">40%</span>
+                    <span class="metric-label">Efficiency</span>
+                  </div>
+                </div>
+                <div class="tech-stack">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">MongoDB</span>
+                  <span class="tech-badge">AWS</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#" class="btn-primary btn-card">View Case Study</a>
+                  <a href="#" class="btn-card btn-card-outline">Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+              <div class="project-card-image">
+                <div class="status-badge status-completed">
+                  <span class="pulse-dot"></span> Completed
+                </div>
+                <img src="Assets/iot_dashboard.png" alt="IoT Control Dashboard">
+              </div>
+              <div class="project-card-body">
+                <h3>Industrial IoT Analytics</h3>
+                <p>A real-time monitoring suite for heavy machinery, providing predictive maintenance alerts and performance heatmaps.</p>
+                
+                <div class="card-metrics">
+                  <div class="metric-item">
+                    <span class="metric-value">Real-Time</span>
+                    <span class="metric-label">Monitoring</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-value">99.9%</span>
+                    <span class="metric-label">Uptime</span>
+                  </div>
+                </div>
+                <div class="tech-stack">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">MQTT</span>
+                  <span class="tech-badge">TimescaleDB</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#" class="btn-primary btn-card">View Details</a>
+                  <a href="#" class="btn-card btn-card-outline">Open App</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ongoing Projects Pane -->
+        <div id="ongoing" class="tab-pane">
+          <div class="projects-grid">
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-card-image">
+                <div class="status-badge status-ongoing">
+                  <span class="pulse-dot"></span> In Progress
+                </div>
+                <img src="Assets/fintech_wallet.png" alt="FinTech Wallet App">
+              </div>
+              <div class="project-card-body">
+                <h3>Secure FinTech Wallet</h3>
+                <p>Architecting a next-gen digital wallet featuring biometric security, crypto-fiat swaps, and contactless NFC payments.</p>
+
+                <div class="progress-container">
+                  <div class="progress-label">
+                    <span>Development Progress</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="tech-stack">
+                  <span class="tech-badge">React Native</span>
+                  <span class="tech-badge">Rust</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">Docker</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#" class="btn-primary btn-card">Follow Progress</a>
+                  <a href="#" class="btn-card btn-card-outline">Early Access</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section: High-End Conversion Point -->
+  <section class="cta-section">
+    <div class="cta-bg-mesh"></div>
+    <div class="container cta-container">
+      <div class="cta-content">
+        <h2 class="neon-text">Have a project in mind?</h2>
+        <p>
+          Let’s build something amazing together. We turn complex ideas into 
+          powerful, high-performance digital solutions with precision engineering.
+        </p>
+        <div class="cta-buttons">
+          <a href="/contact.html" class="btn-cta-primary">
+            🚀 Get a Free Quote
+          </a>
+          <a href="/contact.html" class="btn-cta-outline">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo">
+          <img src="/Image/logo.png" alt="Epexio Logo" style="height: 50px; width: auto" />
+        </div>
+        <h3><span class="neon-text">Epexio Techno Solutions</span></h3>
+        <p>Empowering MSMEs and startups with high-calibre, custom technology solutions.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <h3>📍Headquarters</h3>
+        <p>
+          B-TF-7, Block - B, Third Floor, Signet Plaza<br />
+          Kunal Char Rasta, Samta - Gotri Road<br />
+          Gotri, Vadodara, Gujarat - 390021, India
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="mailto:office@epexio.in" class="contact-link">office@epexio.in</a>
+        <a href="https://www.linkedin.com/company/epexio-techno-solutions/">LinkedIn</a>
+        <a href="https://www.youtube.com/@EpexioTechnoSolution">Youtube</a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 Epexio Techno Solutions. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="scripts/navbar.js" defer></script>
+  <script src="scripts/portfolio.js" defer></script>
 </body>
+
 </html>

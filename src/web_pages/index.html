@@ -18,34 +18,13 @@
     <link rel="icon" type="image/png" href="/Image/logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container nav-container">
-        <div class="logo">
-          <img
-            src="/Image/logo.png"
-            alt="Epexio Logo"
-            style="height: 50px; width: auto"
-          />
-          <span class="logo-text"
-            >Epexio<span class="accent">.</span
-            ><span class="logo-text">in</span></span
-          >
-        </div>
-        <ul class="nav-links">
-          <li><a href="#process">Our Process</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="products.html" class="btn-primary">Quick Tools</a></li>
-          <li><a href="#contact" class="btn-primary">Start Project</a></li>
-        </ul>
-        <div class="hamburger">☰</div>
-      </div>
-    </nav>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
 
     <section class="hero">
       <div class="background-glow glow-1"></div>
@@ -266,6 +245,146 @@
       </div>
     </section>
 
+    <!-- SECTION: PROJECT PORTFOLIO -->
+    <section id="portfolio" class="project-tabs-section section-padding">
+      <div class="container" style="text-align: center; margin-bottom: 50px;">
+        <div class="section-header">
+          <h2>Our Portfolio</h2>
+          <p>We build what you need to grow—from idea to optimized impact.</p>
+        </div>
+
+        <div class="tabs-wrapper">
+          <div class="tabs-container">
+            <div class="tab-indicator"></div>
+            <button class="tab-btn active" data-target="home-completed">Completed Projects</button>
+            <button class="tab-btn" data-target="home-ongoing">Ongoing Innovations</button>
+          </div>
+        </div>
+
+        <div class="tab-content-area" style="text-align: left;">
+          <!-- Pane 1: Completed -->
+          <div id="home-completed" class="tab-pane active">
+            <div class="projects-grid">
+              <!-- Project 1 -->
+              <div class="project-card">
+                <div class="project-card-image">
+                  <div class="status-badge status-completed">
+                    <span class="pulse-dot"></span> Completed
+                  </div>
+                  <img src="Assets/cattle_insurance.png" alt="Cattle Insurance System">
+                </div>
+                <div class="project-card-body">
+                  <h3>Cattle Management System</h3>
+                  <p>Enterprise-grade platform for digital cattle tagging, KYC, and claim processing.</p>
+                  
+                  <div class="card-metrics">
+                    <div class="metric-item">
+                      <span class="metric-value">10,000+</span>
+                      <span class="metric-label">Processed</span>
+                    </div>
+                    <div class="metric-item">
+                      <span class="metric-value">40%</span>
+                      <span class="metric-label">Efficiency</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-stack">
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">AWS</span>
+                  </div>
+                  <div class="card-actions">
+                    <a href="projects.html" class="btn-primary btn-card">View Case Study</a>
+                    <a href="#" class="btn-card btn-card-outline">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-card">
+                <div class="project-card-image">
+                  <div class="status-badge status-completed">
+                    <span class="pulse-dot"></span> Completed
+                  </div>
+                  <img src="Assets/iot_dashboard.png" alt="IoT Analytics">
+                </div>
+                <div class="project-card-body">
+                  <h3>Industrial IoT Analytics</h3>
+                  <p>Real-time monitoring suite for heavy machinery with predictive alerts.</p>
+
+                  <div class="card-metrics">
+                    <div class="metric-item">
+                      <span class="metric-value">Real-Time</span>
+                      <span class="metric-label">Monitoring</span>
+                    </div>
+                    <div class="metric-item">
+                      <span class="metric-value">99.9%</span>
+                      <span class="metric-label">Uptime</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">MQTT</span>
+                    <span class="tech-badge">Python</span>
+                  </div>
+                  <div class="card-actions">
+                    <a href="projects.html" class="btn-primary btn-card">View Details</a>
+                    <a href="#" class="btn-card btn-card-outline">Open App</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: Ongoing -->
+          <div id="home-ongoing" class="tab-pane">
+            <div class="projects-grid">
+              <!-- Project 3 -->
+              <div class="project-card">
+                <div class="project-card-image">
+                  <div class="status-badge status-ongoing">
+                    <span class="pulse-dot"></span> In Progress
+                  </div>
+                  <img src="Assets/fintech_wallet.png" alt="Fintech Wallet">
+                </div>
+                <div class="project-card-body">
+                  <h3>Secure FinTech Wallet</h3>
+                  <p>Next-gen digital wallet featuring biometric security and crypto swaps.</p>
+
+                  <div class="progress-container">
+                    <div class="progress-label">
+                      <span>Development Progress</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                  </div>
+
+                  <div class="tech-stack">
+                    <span class="tech-badge">Rust</span>
+                    <span class="tech-badge">Docker</span>
+                    <span class="tech-badge">React Native</span>
+                  </div>
+                  <div class="card-actions">
+                    <a href="#" class="btn-primary btn-card">Follow Progress</a>
+                    <a href="#" class="btn-card btn-card-outline">Early Access</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="margin-top: 60px;">
+          <a href="projects.html" class="btn-secondary" style="padding: 12px 40px; border-radius: 10px;">
+            View Full Portfolio <i class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section id="leadership" class="section-padding bg-light border-top">
       <div class="container">
         <div class="section-header">
@@ -406,5 +525,7 @@
         &copy; 2025 Epexio Techno Solutions. All rights reserved.
       </div>
     </footer>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/portfolio.js" defer></script>
   </body>
 </html>

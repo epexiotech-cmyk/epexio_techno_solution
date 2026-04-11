@@ -20,32 +20,15 @@
   <meta property="og:image" content="https://epexio.in/Image/logo.png" />
   <link rel="icon" type="image/png" href="/Image/logo.png" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="logo" style="text-decoration: none;">
-        <img src="/Image/logo.png" alt="Epexio Logo" class="logo-icon"
-          style="width: 40px; height: 40px; background: none; border-radius: 0;" />
-        <span class="logo-text" style="color: white;">Epexio<span class="accent">.</span><span
-            class="logo-text">in</span></span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html#process">Our Process</a></li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#leadership">Leadership</a></li>
-        <li><a href="products.html">Quick Tools</a></li>
-        <li><a href="contact.html" class="accent">Contact</a></li>
-        <li><a href="#contact-form" class="btn-primary">Start Project</a></li>
-      </ul>
-      <div class="hamburger">☰</div>
-    </div>
-  </nav>
+  <!-- Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
 
   <!-- Hero Section (Split Layout) -->
   <section class="hero-split">
@@ -315,6 +298,16 @@
     </div>
   </footer>
 
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-content">
+      <div class="success-icon">✓</div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out. Our team will analyze your requirements and get back to you within 24 hours.</p>
+      <button class="btn-primary btn-large btn-full" id="close-modal">Great, Thanks!</button>
+    </div>
+  </div>
+
   <script>
     // FAQ Accordion Toggle
     document.querySelectorAll('.faq-question').forEach(question => {
@@ -339,7 +332,50 @@
         }
       });
     });
+
+    // Form Submission Logic
+    const contactForm = document.querySelector('.main-contact-form');
+    const successModal = document.getElementById('success-modal');
+    const closeModalBtn = document.getElementById('close-modal');
+    const submitBtn = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
+
+    if (contactForm && submitBtn) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic Validation Check
+        if (!contactForm.checkValidity()) {
+          contactForm.reportValidity();
+          return;
+        }
+
+        // Loading State
+        submitBtn.classList.add('loading');
+        
+        // Simulate API/Mail processing delay
+        setTimeout(() => {
+          submitBtn.classList.remove('loading');
+          successModal.classList.add('active');
+          contactForm.reset();
+        }, 1500);
+      });
+    }
+
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener('click', () => {
+        successModal.classList.remove('active');
+      });
+    }
+
+    // Direct WhatsApp Chat fallback (ensure correct formatting)
+    document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        // Logging or analytics can go here
+        console.log('WhatsApp chat initiated');
+      });
+    });
   </script>
+    <script src="scripts/navbar.js" defer></script>
 </body>
 
 </html>

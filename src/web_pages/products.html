@@ -20,139 +20,743 @@
   <meta property="og:image" content="https://epexio.in/Image/logo.png" />
   <link rel="icon" type="image/png" href="/Image/logo.png" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- Navbar (Same as Index) -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="logo" style="text-decoration: none;">
-        <img src="/Image/logo.png" alt="Epexio Logo" class="logo-icon"
-          style="width: 40px; height: 40px; background: none; border-radius: 0;" />
-        <span class="logo-text" style="color: white;">Epexio<span class="accent">.</span><span
-            class="logo-text">in</span></span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html#process">Our Process</a></li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#leadership">Leadership</a></li>
-        <li><a href="products.html" class="accent">Quick Tools</a></li>
-        <li><a href="index.html#contact" class="btn-primary">Start Project</a></li>
-      </ul>
-      <div class="hamburger">☰</div>
-    </div>
-  </nav>
+  <!-- Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
 
-  <!-- Hero Section (Adapted) -->
-  <section class="hero" style="padding-bottom: 60px;">
-    <div class="background-glow glow-1"></div>
-    <div class="background-glow glow-2"></div>
-    <div class="container hero-content">
+  <!-- Section: Premium SaaS Hero -->
+  <section class="saas-hero">
+    <div class="hero-glow-orb"></div>
+    <div class="container saas-hero-content">
+      <div class="platform-badge">
+        <i class="fa-solid fa-cube"></i> Epexio Platform
+      </div>
       <h1>
-        Quick Utility <span class="neon-text">Tools</span>
+        All-in-One Tools & Apps for <br>
+        <span class="neon-text" style="background: linear-gradient(to right, #22d3ee, #3b82f6); -webkit-background-clip: text; background-clip: text; color: transparent;">Business Automation</span>
       </h1>
-      <p class="hero-sub">
-        Simple, free, and efficient software solutions to streamline your daily operations.
+      <p class="hero-sub-text">
+        From document processing to field data collection — Epexio helps you automate, manage, and scale your operations with precision.
       </p>
+      <div class="hero-buttons">
+        <a href="#quick-tools" class="btn-saas btn-saas-primary">🚀 Explore Tools</a>
+        <a href="contact.html" class="btn-saas btn-saas-outline">View Business Solutions</a>
+      </div>
+      
+      <div class="feature-strip">
+        <div class="feature-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Saves 5–10 Hours/Week</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Built for Real Workflows</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Web, Desktop & Mobile</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Tools Grid Section -->
-  <section class="section-padding bg-light">
+  <!-- Section: SaaS Trust Strip -->
+  <section class="trust-strip">
     <div class="container">
-      <div class="tools-grid">
-
-        <!-- Tool 1: Batch Printer -->
-        <div class="tool-card">
-          <div class="tool-header">
-            <div class="tool-icon-box">🖨️</div>
-            <div class="tool-title">
-              <h3>Epexio Batch Printer</h3>
-              <span class="version-tag">Version 1.0 (Stable)</span>
-            </div>
+      <div class="trust-grid">
+        <!-- Item 1 -->
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <i class="fa-solid fa-circle-check"></i>
           </div>
-          <div class="tool-body">
-            <p>
-              Stop wasting time printing PDF files one by one. Drag, drop, and
-              print entire folders of invoices or policies instantly.
-            </p>
-            <ul class="feature-list">
-              <li>Bulk print unlimited PDFs</li>
-              <li>Auto-detects Adobe Reader</li>
-              <li>Works on Windows 10 & 11</li>
-              <li>Zero installation required</li>
-            </ul>
-          </div>
-          <div class="tool-footer">
-            <a href="Epexio_Batch_Printer.zip" class="btn-primary btn-full" download>
-              ⬇ Download for Windows
-            </a>
-            <div style="font-size: 0.75rem; color: #64748b; margin-top: 10px">
-              Note: Click "Run Anyway" if Windows Defender prompts.
-            </div>
+          <div class="trust-text">
+            Built for Real <br> Business Workflows
           </div>
         </div>
-
-        <!-- Tool 2: Image Compressor -->
-        <div class="tool-card" style="opacity: 0.7">
-          <div class="tool-header">
-            <div class="tool-icon-box" style="background: #475569;">📷</div>
-            <div class="tool-title">
-              <h3>Epexio Image Compressor</h3>
-              <span class="version-tag"
-                style="background: rgba(71, 85, 105, 0.2); color: #94a3b8; border-color: #475569;">Coming Soon</span>
-            </div>
+        <!-- Item 2 -->
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <i class="fa-solid fa-bolt"></i>
           </div>
-          <div class="tool-body">
-            <p>
-              A fast tool to reduce image sizes for websites and email
-              attachments without losing quality.
-            </p>
-            <ul class="feature-list">
-              <li>Reduce size by up to 80%</li>
-              <li>Bulk processing</li>
-              <li>Drag & Drop interface</li>
-            </ul>
-          </div>
-          <div class="tool-footer">
-            <button class="btn-primary btn-full btn-disabled" disabled>
-              In Development
-            </button>
+          <div class="trust-text">
+            Saves 5–10 Hours <br> Every Week
           </div>
         </div>
-
-        <!-- Tool 3: Epexio PDF Merger -->
-        <div class="tool-card" style="opacity: 0.7">
-          <div class="tool-header">
-            <div class="tool-icon-box" style="background: #475569;">📂</div>
-            <div class="tool-title">
-              <h3>Epexio PDF Merger</h3>
-              <span class="version-tag"
-                style="background: rgba(71, 85, 105, 0.2); color: #94a3b8; border-color: #475569;">Planned</span>
-            </div>
+        <!-- Item 3 -->
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <i class="fa-solid fa-shield-halved"></i>
           </div>
-          <div class="tool-body">
-            <p>
-              Merge multiple PDF files into a single file with just a few clicks. Combine multiple KYC documents, policy
-              papers, and forms into a single, professional PDF file in seconds.
-            </p>
-            <ul class="feature-list">
-              <li>Combine multiple PDF files</li>
-              <li>Drag & Drop interface</li>
-              <li>Combine multiple KYC documents</li>
-              <li>Combine multiple policy papers</li>
-              <li>Combine multiple forms</li>
-            </ul>
-          </div>
-          <div class="tool-footer">
-            <button class="btn-primary btn-full btn-disabled" disabled>
-              In Development
-            </button>
+          <div class="trust-text">
+            Secure, Reliable <br> & Easy to Use
           </div>
         </div>
-
+        <!-- Item 4 -->
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <i class="fa-solid fa-display"></i>
+          </div>
+          <div class="trust-text">
+            Works on Web, <br> Desktop & Mobile
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Section: Premium Tools Marketplace -->
+  <section id="quick-tools" class="tools-section">
+    <div class="container">
+      <div class="tools-header">
+        <span class="label">Free Utilities</span>
+        <h2>Free Tools to Get Started</h2>
+        <p>Simple, powerful tools designed to save time in your daily workflow. No installation required for web tools.</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Tools</button>
+        <button class="filter-btn" data-filter="docs">Document Tools</button>
+        <button class="filter-btn" data-filter="images">Image Tools</button>
+        <button class="filter-btn" data-filter="soon">Coming Soon</button>
+      </div>
+
+      <!-- Marketplace Grid -->
+      <div class="premium-tools-grid">
+        <!-- 1. Batch Printer -->
+        <div class="premium-tool-card" data-category="docs">
+          <div class="card-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-print"></i></div>
+            <h3>Batch Printer</h3>
+            <span class="tool-badge badge-free">Free</span>
+          </div>
+          <div class="use-case">"Print multiple documents in one click"</div>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Fast bulk processing</li>
+            <li><i class="fa-solid fa-check"></i> Zero configuration</li>
+          </ul>
+          <div class="tool-footer-meta">
+            <a href="Epexio_Batch_Printer.zip" class="btn-tool-cta btn-tool-primary" download>
+              <i class="fa-solid fa-download"></i> Download
+            </a>
+            <span class="tool-type">Windows Application</span>
+          </div>
+        </div>
+
+        <!-- 2. PDF Merger -->
+        <div class="premium-tool-card" data-category="docs">
+          <div class="card-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-file-pdf"></i></div>
+            <h3>PDF Merger</h3>
+            <span class="tool-badge badge-free">Free</span>
+          </div>
+          <div class="use-case">"Combine multiple PDFs into one file instantly"</div>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Secure processing</li>
+            <li><i class="fa-solid fa-check"></i> Drag & Drop</li>
+          </ul>
+          <div class="tool-footer-meta">
+            <a href="#" class="btn-tool-cta btn-tool-primary">
+              <i class="fa-solid fa-arrow-pointer"></i> Try Now
+            </a>
+            <span class="tool-type">Web Tool (Cloud)</span>
+          </div>
+        </div>
+
+        <!-- 3. Image Compressor -->
+        <div class="premium-tool-card" data-category="images">
+          <div class="card-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-image"></i></div>
+            <h3>Image Compressor</h3>
+            <span class="tool-badge badge-free">Free</span>
+          </div>
+          <div class="use-case">"Reduce image size without losing quality"</div>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Lossless compression</li>
+            <li><i class="fa-solid fa-check"></i> Fast & Lightweight</li>
+          </ul>
+          <div class="tool-footer-meta">
+            <a href="#" class="btn-tool-cta btn-tool-primary">
+              <i class="fa-solid fa-arrow-pointer"></i> Try Now
+            </a>
+            <span class="tool-type">Web Tool (Cloud)</span>
+          </div>
+        </div>
+
+        <!-- 4. Bulk File Renamer -->
+        <div class="premium-tool-card" data-category="docs">
+          <div class="card-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-font"></i></div>
+            <h3>Bulk File Renamer</h3>
+            <span class="tool-badge badge-free">Free</span>
+          </div>
+          <div class="use-case">"Rename hundreds of files in seconds"</div>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Advanced patterns</li>
+            <li><i class="fa-solid fa-check"></i> Bulk rename folders</li>
+          </ul>
+          <div class="tool-footer-meta">
+            <a href="#" class="btn-tool-cta btn-tool-primary">
+              <i class="fa-solid fa-download"></i> Download
+            </a>
+            <span class="tool-type">Windows Application</span>
+          </div>
+        </div>
+
+        <!-- 5. Image to PDF -->
+        <div class="premium-tool-card" data-category="images docs">
+          <div class="card-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-file-image"></i></div>
+            <h3>Image to PDF</h3>
+            <span class="tool-badge badge-free">Free</span>
+          </div>
+          <div class="use-case">"Convert images into a clean PDF file"</div>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> High resolution</li>
+            <li><i class="fa-solid fa-check"></i> Smart alignment</li>
+          </ul>
+          <div class="tool-footer-meta">
+            <a href="#" class="btn-tool-cta btn-tool-primary">
+              <i class="fa-solid fa-arrow-pointer"></i> Try Now
+            </a>
+            <span class="tool-type">Web Tool (Cloud)</span>
+          </div>
+        </div>
+
+        <!-- 6. PDF Splitter -->
+        <div class="premium-tool-card" data-category="docs soon">
+          <div class="card-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-scissors"></i></div>
+            <h3>PDF Splitter</h3>
+            <span class="tool-badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="use-case">"Split large PDFs into multiple files"</div>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Custom ranges</li>
+            <li><i class="fa-solid fa-check"></i> One-click extraction</li>
+          </ul>
+          <div class="tool-footer-meta">
+            <button class="btn-tool-cta btn-tool-disabled" disabled>
+              In Development
+            </button>
+            <span class="tool-type">Coming Q3 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Smart Web SaaS Tools -->
+  <section class="web-saas-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="core-business-label">🚀 Core Business Tools</span>
+        <span class="label">Web SaaS Tools</span>
+        <h2>Smart Web Tools for Daily Operations</h2>
+        <p class="subtext">
+          Access powerful tools directly from your browser — no installation 
+          required. Built for speed, security, and convenience.
+        </p>
+      </div>
+
+      <div class="saas-grid">
+        <!-- 1. KYC Document Manager -->
+        <div class="saas-product-card flagship-web">
+          <div class="card-saas-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-id-card"></i></div>
+            <span class="badge-web-app">Web App</span>
+          </div>
+          <h3>KYC Document Manager</h3>
+          <p class="saas-use-case">
+            "Combine Aadhaar, PAN, and other identification documents into one 
+            clean PDF instantly for faster processing."
+          </p>
+          <ul class="saas-features">
+            <li><i class="fa-solid fa-check"></i> Instant Document Merging</li>
+            <li><i class="fa-solid fa-check"></i> Standardized KYC Output</li>
+            <li><i class="fa-solid fa-check"></i> Secure Browser Processing</li>
+          </ul>
+          <a href="#" class="btn-saas btn-saas-primary">Try Now</a>
+          <span class="saas-footer-note">Works on all modern browsers</span>
+        </div>
+
+        <!-- 2. File Search System -->
+        <div class="saas-product-card">
+          <div class="card-saas-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <span class="badge-web-app">Web App</span>
+          </div>
+          <h3>File Search System</h3>
+          <p class="saas-use-case">
+            "Search and retrieve files instantly using tag numbers, names, or 
+            mobile numbers across your entire database."
+          </p>
+          <ul class="saas-features">
+            <li><i class="fa-solid fa-check"></i> Smart Multi-Tag Filters</li>
+            <li><i class="fa-solid fa-check"></i> High-Speed Retrieval</li>
+            <li><i class="fa-solid fa-check"></i> Cloud-Ready Interface</li>
+          </ul>
+          <a href="#" class="btn-saas btn-saas-primary">Try Now</a>
+          <span class="saas-footer-note">Optimized for Desktop browsers</span>
+        </div>
+
+        <!-- 3. Report Generator Tool -->
+        <div class="saas-product-card">
+          <div class="card-saas-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-chart-pie"></i></div>
+            <span class="badge-web-app">Web App</span>
+          </div>
+          <h3>Report Generator</h3>
+          <p class="saas-use-case">
+            "Generate professional business reports automatically from your 
+            raw data in seconds using custom templates."
+          </p>
+          <ul class="saas-features">
+            <li><i class="fa-solid fa-check"></i> Auto PDF Generation</li>
+            <li><i class="fa-solid fa-check"></i> Dynamic Templates</li>
+            <li><i class="fa-solid fa-check"></i> Export to Excel & PDF</li>
+          </ul>
+          <a href="#" class="btn-saas btn-saas-primary">Try Now</a>
+          <span class="saas-footer-note">Secure data handling</span>
+        </div>
+
+        <!-- 4. PDF Toolkit -->
+        <div class="saas-product-card">
+          <div class="card-saas-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-toolbox"></i></div>
+            <span class="badge-web-app">Web App</span>
+          </div>
+          <h3>SaaS PDF Toolkit</h3>
+          <p class="saas-use-case">
+            "The all-in-one suite for PDF operations — merge, split, compress, 
+            and rotate files directly in your browser."
+          </p>
+          <ul class="saas-features">
+            <li><i class="fa-solid fa-check"></i> Multiple PDF Utilities</li>
+            <li><i class="fa-solid fa-check"></i> Bulk Batch Processing</li>
+            <li><i class="fa-solid fa-check"></i> Drag & Drop Efficiency</li>
+          </ul>
+          <a href="#" class="btn-saas btn-saas-primary">Try Now</a>
+          <span class="saas-footer-note">No file size limits</span>
+        </div>
+
+        <!-- 5. Image Processing Tool -->
+        <div class="saas-product-card">
+          <div class="card-saas-top">
+            <div class="tool-icon-circle"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <span class="badge-web-app">Web App</span>
+          </div>
+          <h3>Image Processor Pro</h3>
+          <p class="saas-use-case">
+            "Compress, convert, and optimize images in seconds without 
+            sacrificing quality for web and print."
+          </p>
+          <ul class="saas-features">
+            <li><i class="fa-solid fa-check"></i> Lossless Compression</li>
+            <li><i class="fa-solid fa-check"></i> Bulk Image Conversion</li>
+            <li><i class="fa-solid fa-check"></i> Auto-Resize for Web</li>
+          </ul>
+          <a href="#" class="btn-saas btn-saas-primary">Try Now</a>
+          <span class="saas-footer-note">Supports JPG, PNG, WEBP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Powerful Desktop Applications -->
+  <section class="desktop-apps-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Desktop Apps</span>
+        <h2>Powerful Desktop Applications</h2>
+        <p class="subtext">
+          High-performance tools built for speed, reliability, and heavy-duty 
+          offline operations. No internet required.
+        </p>
+      </div>
+
+      <!-- Flagship Featured App: Batch Printer -->
+      <div class="featured-app-card">
+        <div class="featured-content">
+          <div class="flagship-badge">
+            <i class="fa-solid fa-crown"></i> Flagship Product
+          </div>
+          <h3>Epexio Batch Printer</h3>
+          <p>
+            The industry standard for document automation. Print hundreds of PDFs, 
+            invoices, and policies in seconds with a single click.
+          </p>
+          <ul class="flagship-features">
+            <li><i class="fa-solid fa-bolt"></i> Ultra-Fast Batching</li>
+            <li><i class="fa-solid fa-wifi-slash"></i> 100% Offline Power</li>
+            <li><i class="fa-solid fa-file-invoice"></i> Multi-Format Support</li>
+            <li><i class="fa-solid fa-shield-check"></i> Enterprise Security</li>
+          </ul>
+          <div class="featured-actions">
+            <a href="Epexio_Batch_Printer.zip" class="btn-saas btn-saas-primary" download>
+              <i class="fa-solid fa-download"></i> Download Now
+            </a>
+            <a href="projects.html" class="btn-saas btn-saas-outline">
+              View Case Study
+            </a>
+          </div>
+        </div>
+        <div class="app-mockup-area">
+          <div class="mock-app-frame">
+            <div class="app-frame-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mock-grid">
+              <div class="mock-box"></div>
+              <div class="mock-box"></div>
+              <div class="mock-box"></div>
+              <div class="mock-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Supporting Apps Grid -->
+      <div class="supporting-grid">
+        <!-- App 1 -->
+        <div class="app-card-sm">
+          <span class="app-type-badge">Windows App</span>
+          <h4>Bulk File Manager</h4>
+          <p>Organize, rename, and structure large file collections with advanced automation logic.</p>
+          <ul class="app-feature-list">
+            <li><i class="fa-solid fa-check"></i> Smart sorting</li>
+            <li><i class="fa-solid fa-check"></i> Regex renamer</li>
+          </ul>
+          <div class="app-card-footer">
+            <span class="badge-soon">In Development</span>
+            <span class="app-meta">Coming Q4 2025</span>
+          </div>
+        </div>
+
+        <!-- App 2 -->
+        <div class="app-card-sm">
+          <span class="app-type-badge">Windows App</span>
+          <h4>Document Organizer</h4>
+          <p>Automatically categorize your messy documents into nested folders based on content tags.</p>
+          <ul class="app-feature-list">
+            <li><i class="fa-solid fa-check"></i> Tag-based sorting</li>
+            <li><i class="fa-solid fa-check"></i> Auto-nesting</li>
+          </ul>
+          <div class="app-card-footer">
+            <span class="badge-soon">In Development</span>
+            <span class="app-meta">Coming Q1 2026</span>
+          </div>
+        </div>
+
+        <!-- App 3 -->
+        <div class="app-card-sm">
+          <span class="app-type-badge">Windows App</span>
+          <h4>Offline Data Tool</h4>
+          <p>Capture field data and manage internal records without requiring any internet connection.</p>
+          <ul class="app-feature-list">
+            <li><i class="fa-solid fa-check"></i> Offline SQL sync</li>
+            <li><i class="fa-solid fa-check"></i> Local secure storage</li>
+          </ul>
+          <div class="app-card-footer">
+            <span class="badge-soon">In Development</span>
+            <span class="app-meta">Planned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Mobile Apps for Field Teams -->
+  <section class="mobile-apps-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="mobile-label">Mobile Apps</span>
+        <h2>Mobile Apps for Field Teams</h2>
+        <p class="subtext">
+          Capture, manage, and sync data directly from the field — fast, 
+          reliable, and built for real business operations.
+        </p>
+      </div>
+
+      <!-- Flagship Mobile App: Cattle Insurance -->
+      <div class="featured-app-card" style="border-color: rgba(251, 113, 133, 0.2);">
+        <div class="featured-content">
+          <div class="mobile-flagship-badge">
+            <i class="fa-solid fa-mobile-screen-button"></i> Flagship Mobile App
+          </div>
+          <h3>Cattle Insurance Field App</h3>
+          <p>
+            The ultimate field tool for insurance teams. Capture photos, 
+            collect KYC, and submit claim reports directly from the spot.
+          </p>
+          <ul class="flagship-features">
+            <li><i class="fa-solid fa-camera-retro" style="color: #fb7185;"></i> Structured Photo Capture</li>
+            <li><i class="fa-solid fa-cloud-arrow-up" style="color: #fb7185;"></i> Auto Cloud Sync</li>
+            <li><i class="fa-solid fa-file-signature" style="color: #fb7185;"></i> KYC & Claims Manager</li>
+            <li><i class="fa-solid fa-signal-slash" style="color: #fb7185;"></i> Offline Data Entry</li>
+          </ul>
+          <div class="featured-actions">
+            <a href="#" class="btn-mobile-primary">
+              <i class="fa-solid fa-magnifying-glass-chart"></i> View App Details
+            </a>
+            <a href="contact.html" class="btn-saas btn-saas-outline">
+              Request Live Demo
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: #475569; margin-top: 20px;">
+            Built specifically for insurance teams, surveyors, and field agents.
+          </p>
+        </div>
+        
+        <div class="app-mockup-area">
+          <div class="phone-mockup-wrap">
+            <div class="phone-backlight"></div>
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="phone-notch"></div>
+                <div class="phone-content-mock">
+                  <div class="phone-line-sm"></div>
+                  <div class="phone-box-mock"></div>
+                  <div class="phone-line-sm" style="width: 80%"></div>
+                  <div class="phone-box-mock" style="height: 60px; background: rgba(6, 182, 212, 0.05);"></div>
+                  <div class="phone-line-sm" style="width: 40%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Supporting Mobile Grid -->
+      <div class="mobile-product-grid">
+        <!-- App 1 -->
+        <div class="mobile-product-card">
+          <span class="app-vertical-tag">Mobile App</span>
+          <h4>Field Data Collection App</h4>
+          <p>Streamline your enterprise data collection with structured forms that work perfectly without internet.</p>
+          <ul class="app-feature-list">
+            <li><i class="fa-solid fa-check" style="color: #fb7185;"></i> Smart Dynamic Forms</li>
+            <li><i class="fa-solid fa-check" style="color: #fb7185;"></i> Real-time GPS Tagging</li>
+          </ul>
+          <div class="app-card-footer">
+            <span class="badge-soon">In Development</span>
+            <span class="app-meta">Android • Optimized</span>
+          </div>
+        </div>
+
+        <!-- App 2 -->
+        <div class="mobile-product-card">
+          <span class="app-vertical-tag">Mobile App</span>
+          <h4>Inspection Manager App</h4>
+          <p>The core tool for site inspectors—capture videos, annotate photos, and generate instant site reports.</p>
+          <ul class="app-feature-list">
+            <li><i class="fa-solid fa-check" style="color: #fb7185;"></i> Video Evidence Capture</li>
+            <li><i class="fa-solid fa-check" style="color: #fb7185;"></i> Auto-Report Sync</li>
+          </ul>
+          <div class="app-card-footer">
+            <span class="badge-soon">Planned</span>
+            <span class="app-meta">Android • Q1 2026</span>
+          </div>
+        </div>
+
+        <!-- App 3 -->
+        <div class="mobile-product-card">
+          <span class="app-vertical-tag">Mobile App</span>
+          <h4>Survey & Reporting App</h4>
+          <p>Quickly build and deploy field surveys to collect accurate team feedback and operational data.</p>
+          <ul class="app-feature-list">
+            <li><i class="fa-solid fa-check" style="color: #fb7185;"></i> Quick Survey Builder</li>
+            <li><i class="fa-solid fa-check" style="color: #fb7185;"></i> Instant PDF Submission</li>
+          </ul>
+          <div class="app-card-footer">
+            <span class="badge-soon" style="color: #475569; background: rgba(71, 85, 105, 0.1);">Future Release</span>
+            <span class="app-meta">Android • Q2 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Custom Software for Your Business -->
+  <section class="custom-software-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="custom-label">Business Solutions</span>
+        <h2>Custom Software for Your Business</h2>
+        <p class="subtext">
+          We design and build tailored systems that automate your workflows, 
+          reduce manual work, and scale your operations with precision.
+        </p>
+      </div>
+
+      <div class="custom-content-wrap">
+        <!-- Left: Solutions Stack -->
+        <div class="solutions-stack">
+          <!-- Solution 1 -->
+          <div class="solution-block">
+            <div class="solution-icon-wrap"><i class="fa-solid fa-workflow"></i></div>
+            <div class="solution-info">
+              <h4>Workflow Automation System</h4>
+              <p>Automate repetitive tasks, approvals, and complex processes across your entire team.</p>
+            </div>
+          </div>
+          <!-- Solution 2 -->
+          <div class="solution-block">
+            <div class="solution-icon-wrap"><i class="fa-solid fa-list-check"></i></div>
+            <div class="solution-info">
+              <h4>Case / Project Tracking</h4>
+              <p>Track progress, assign tasks, and manage field operations from a single unified dashboard.</p>
+            </div>
+          </div>
+          <!-- Solution 3 -->
+          <div class="solution-block">
+            <div class="solution-icon-wrap"><i class="fa-solid fa-cloud-lock"></i></div>
+            <div class="solution-info">
+              <h4>Cloud Data Management</h4>
+              <p>Store, search, and manage your business data securely with enterprise-grade role-based access.</p>
+            </div>
+          </div>
+          <!-- Solution 4 -->
+          <div class="solution-block">
+            <div class="solution-icon-wrap"><i class="fa-solid fa-gauge-high"></i></div>
+            <div class="solution-info">
+              <h4>Custom Admin Dashboards</h4>
+              <p>Get real-time insights, automatic report generation, and full control over your operations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Conversion Panel -->
+        <div class="conversion-panel">
+          <h3>Build Your Own System</h3>
+          <p>
+            Tell us your workflow — we’ll design and build a custom solution that 
+            saves time, reduces human errors, and grows with your business.
+          </p>
+          <ul class="conversion-features">
+            <li><i class="fa-solid fa-check-double"></i> Fully customized to your needs</li>
+            <li><i class="fa-solid fa-bolt-lightning"></i> Fast development & deployment</li>
+            <li><i class="fa-solid fa-shield-halved"></i> Scalable & secure architecture</li>
+          </ul>
+          <a href="contact.html" class="btn-consultation">
+            <i class="fa-solid fa-comments"></i> Get Free Consultation
+          </a>
+          <span class="consult-meta">No commitment • Free process discussion</span>
+        </div>
+      </div>
+
+      <span class="trust-accent-note">Used in insurance, field operations, and business automation workflows</span>
+    </div>
+  </section>
+
+  <!-- Section: Simple & Transparent Pricing -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="pricing-badge">Pricing Model</span>
+        <h2>Simple & Transparent Pricing</h2>
+        <p class="subtext">
+          Start free and scale as your business grows — no hidden costs or 
+          complicated enterprise logic.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Tier 1: Free -->
+        <div class="pricing-card">
+          <span class="pricing-badge">FREE</span>
+          <h3>Free Tools</h3>
+          <p class="pricing-desc">
+            Access essential document and image utilities for your everyday 
+            individual business tasks.
+          </p>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Unlimited Basic Usage</li>
+            <li><i class="fa-solid fa-check"></i> No Signup Required</li>
+            <li><i class="fa-solid fa-check"></i> Instant Browser Access</li>
+          </ul>
+          <a href="#" class="btn-pricing btn-pricing-outline">Start Using</a>
+          <span class="pricing-footer-text">Best for individuals & small tasks</span>
+        </div>
+
+        <!-- Tier 2: Pro (Highlighted) -->
+        <div class="pricing-card highlight">
+          <span class="pricing-badge">COMING SOON</span>
+          <h3>Pro Tools</h3>
+          <p class="pricing-desc">
+            Advanced features, faster processing, and higher limits designed 
+            for growing professional teams.
+          </p>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Faster File Processing</li>
+            <li><i class="fa-solid fa-check"></i> Bulk Batch Operations</li>
+            <li><i class="fa-solid fa-check"></i> Advanced Tool Features</li>
+          </ul>
+          <a href="#" class="btn-saas btn-saas-primary">Notify Me</a>
+          <span class="pricing-footer-text">Built for teams & professionals</span>
+        </div>
+
+        <!-- Tier 3: Custom -->
+        <div class="pricing-card">
+          <span class="pricing-badge">CUSTOM</span>
+          <h3>Business Solutions</h3>
+          <p class="pricing-desc">
+            Tailored software systems built specifically to solve your 
+            unique business workflow bottlenecks.
+          </p>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Fully Customized Systems</li>
+            <li><i class="fa-solid fa-check"></i> Scalable Architecture</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated Priority Support</li>
+          </ul>
+          <a href="contact.html" class="btn-saas btn-saas-outline" style="border-image: linear-gradient(to right, #06b6d2, #a855f7) 1;">
+            Contact Us
+          </a>
+          <span class="pricing-footer-text">For businesses & enterprises</span>
+        </div>
+      </div>
+
+      <span class="pricing-trust-note">
+        No hidden fees • Pay only for what you need • Flexible solution modules
+      </span>
+    </div>
+  </section>
+
+  <!-- Section: Final Conversion CTA -->
+  <section class="final-cta-section">
+    <div class="cta-aura-glow"></div>
+    <div class="cta-visual-blur blur-1"></div>
+    <div class="cta-visual-blur blur-2"></div>
+    
+    <div class="container">
+      <h2>Ready to Automate Your Business?</h2>
+      <p class="subtext">
+        Stop wasting time on manual work. Let Epexio build tools and systems 
+        that make your operations faster, smarter, and more efficient.
+      </p>
+
+      <div class="cta-button-group">
+        <a href="contact.html" class="btn-consultation-xl">
+          <i class="fa-solid fa-calendar-check"></i> Book Free Consultation
+        </a>
+        <a href="#marketplace" class="btn-saas btn-saas-outline" style="padding: 18px 40px; font-weight: 700;">
+          Explore Our Tools
+        </a>
+      </div>
+
+      <div class="trust-row-saas">
+        <div class="trust-item-saas"><i class="fa-solid fa-circle-check"></i> Free discussion</div>
+        <div class="trust-item-saas"><i class="fa-solid fa-circle-check"></i> No commitment</div>
+        <div class="trust-item-saas"><i class="fa-solid fa-circle-check"></i> Fast response</div>
+      </div>
+
+      <p class="final-micro-copy">
+        Tell us your problem — we’ll suggest the best solution.
+      </p>
     </div>
   </section>
 
@@ -189,6 +793,8 @@
       &copy; 2025 Epexio Techno Solutions. All rights reserved.
     </div>
   </footer>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/products.js" defer></script>
 </body>
 
 </html>

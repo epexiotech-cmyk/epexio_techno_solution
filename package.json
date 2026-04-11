@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:web": "browser-sync start --server src/web_pages --files \"src/web_pages/**/*\" --port 3000 --routes \"/Image=Image\" --no-ui",
-    "dev:admin": "browser-sync start --server \"src/admin\" --files \"src/admin/**/*\" --port 3001 --routes \"/data=data\" --no-ui --index \"admin.html\"",
+    "dev:web": "browser-sync start --server src/web_pages --files \"src/web_pages/**/*\" --port 3000 --routes \"/Image=Image\" --no-ui --no-notify",
+    "dev:admin": "browser-sync start --server \"src/admin\" --files \"src/admin/**/*\" --port 3001 --routes \"/data=data\" --no-ui --index \"admin.html\" --no-notify",
     "dev": "npm-run-all --parallel dev:web dev:admin",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
