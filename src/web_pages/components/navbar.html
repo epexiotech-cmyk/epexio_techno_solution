@@ -1,36 +1,107 @@
 <nav class="navbar">
-  <div class="container nav-container">
-    <a href="index.html" class="logo" style="text-decoration: none;">
-      <img src="/Image/logo.png" alt="Epexio Logo" class="logo-icon"
-        style="width: 40px; height: 40px; background: none; border-radius: 0;" />
-      <span class="logo-text" style="color: white;">Epexio<span class="accent">.</span><span
-          class="logo-text">in</span></span>
+  <div class="nav-container">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="/Image/logo.png" alt="Epexio Logo" />
+      <span>Epexio.in</span>
     </a>
+
+    <!-- Nav Links -->
     <ul class="nav-links">
-      <li><a href="index.html" data-page="index">Home</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-page="solutions">Solutions <i class="fa-solid fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="solutions/web-development.html">Web Development</a></li>
-          <li><a href="solutions/mobile-app-development.html">Mobile App Development</a></li>
-          <li><a href="solutions/automation-tools.html">Automation & Tools</a></li>
-          <li><a href="solutions/custom-business-software.html">Custom Business Software</a></li>
-          <li><a href="solutions/web-applications.html">Web Applications</a></li>
-          <li><a href="solutions/digital-marketing.html">Digital Marketing</a></li>
-          <li><a href="solutions/branding-design.html">Branding & Design</a></li>
-          <li><a href="solutions/saas-products.html">SaaS Products</a></li>
-          <li><a href="solutions/ui-ux-design.html">UI/UX Design</a></li>
-          <li><a href="solutions/maintenance-support.html">Maintenance & Support</a></li>
-          <li><a href="solutions/cloud-devops.html">Cloud & DevOps</a></li>
-        </ul>
+      <li><a href="about.html">About</a></li>
+
+      <li class="nav-item">
+        <a href="#" class="dropdown-toggle">Solutions <span class="chevron">▾</span></a>
+        <!-- Mega Menu Integration -->
+        <div class="dropdown-menu mega-menu">
+          <div class="mega-menu-content">
+            <!-- Section 1: Engineering -->
+            <div class="mega-section">
+              <div class="section-header-wrap">
+                <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                <h4 class="section-heading">Development</h4>
+              </div>
+              <ul class="mega-links">
+                <li><a href="solutions/web-development.html">Web Development</a></li>
+                <li><a href="solutions/mobile-app-development.html">Mobile App Development</a></li>
+                <li><a href="solutions/web-applications.html">Web Applications</a></li>
+                <li><a href="solutions/saas-products.html">SaaS Products</a></li>
+                <li><a href="solutions/cloud-devops.html">Cloud & DevOps</a></li>
+              </ul>
+            </div>
+
+            <!-- Section 2: Creative -->
+            <div class="mega-section">
+              <div class="section-header-wrap">
+                <div class="icon-box creative"><i class="fa-solid fa-bezier-curve"></i></div>
+                <h4 class="section-heading">Design</h4>
+              </div>
+              <ul class="mega-links">
+                <li><a href="solutions/ui-ux-design.html">UI/UX Design</a></li>
+                <li><a href="solutions/branding-design.html">Branding & Design</a></li>
+                <li><a href="solutions/digital-marketing.html">Digital Marketing</a></li>
+              </ul>
+            </div>
+
+            <!-- Section 3: Enterprise -->
+            <div class="mega-section">
+              <div class="section-header-wrap">
+                <div class="icon-box enterprise"><i class="fa-solid fa-chess-knight"></i></div>
+                <h4 class="section-heading">Enterprise</h4>
+              </div>
+              <ul class="mega-links">
+                <li><a href="solutions/custom-business-software.html">Custom Business Software</a></li>
+                <li><a href="solutions/automation-tools.html">Automation & Tools</a></li>
+                <li><a href="solutions/maintenance-support.html">Maintenance & Support</a></li>
+              </ul>
+            </div>
+
+            <!-- Right Audit Card -->
+            <div class="mega-right-card">
+              <div class="card-inner">
+                <div class="preview-card">
+                  <div class="preview-browser-top">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                  </div>
+                  <div class="preview-ui">
+                    <div class="ui-line long"></div>
+                    <div class="ui-line med"></div>
+                    <div class="ui-grid">
+                      <div class="ui-item"></div>
+                      <div class="ui-item"></div>
+                    </div>
+                    <div class="ui-line short"></div>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge">FREE</span>
+                  <h4>Free Business Audit</h4>
+                  <p>
+                    We analyze your current workflow and suggest automation & software improvements to grow faster.
+                  </p>
+                  <a href="contact.html" class="cta-btn">
+                    Book Free Consultation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </li>
-      <li><a href="about.html" data-page="about">About</a></li>
-      <li><a href="projects.html" data-page="projects">Projects</a></li>
-      <li><a href="products.html" data-page="products">Products</a></li>
-      <li><a href="web_templates.html" data-page="web_templates">Web Templates</a></li>
-      <li><a href="career.html" data-page="career">Careers</a></li>
-      <li><a href="contact.html" class="btn-primary" data-page="contact">Contact</a></li>
+
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="web_templates.html">Web Templates</a></li>
+      <li><a href="career.html">Careers</a></li>
     </ul>
+
+    <!-- CTA -->
+    <a href="contact.html" class="nav-cta">Contact</a>
+
+    <!-- Hamburger for Mobile (Hidden by default in CSS) -->
     <div class="hamburger">☰</div>
   </div>
 </nav>

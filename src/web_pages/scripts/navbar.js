@@ -116,14 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 30) {
                 navbar.classList.add('navbar-scrolled');
-                navbar.style.boxShadow = '0 10px 40px rgba(0, 0, 0, 0.8)';
-                navbar.style.padding = '10px 0';
-                navbar.style.backgroundColor = 'rgba(11, 15, 26, 0.98)';
             } else {
                 navbar.classList.remove('navbar-scrolled');
-                navbar.style.boxShadow = 'none';
-                navbar.style.padding = '0';
-                navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.9)';
             }
         });
     }
