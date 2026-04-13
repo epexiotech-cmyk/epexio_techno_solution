@@ -120,5 +120,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 navbar.classList.remove('navbar-scrolled');
             }
         });
+
+        // 4. Dynamic Solutions Subtitle
+        const path = window.location.pathname;
+        const pageMap = {
+            "web-development": "Web Development",
+            "mobile-app": "Mobile App",
+            "automation": "Automation",
+            "custom-software": "Custom Software",
+            "web-app": "Web Applications",
+            "marketing": "Digital Marketing",
+            "branding": "Branding & Design",
+            "saas": "SaaS",
+            "ui-ux": "UI/UX Design",
+            "support": "Support",
+            "cloud": "Cloud & DevOps"
+        };
+        const currentRoute = Object.keys(pageMap).find(key => path.includes(key));
+        if (currentRoute) {
+            const navPageName = document.getElementById("navPageName");
+            if (navPageName) {
+                navPageName.innerText = " / " + pageMap[currentRoute];
+            }
+        }
     }
 });

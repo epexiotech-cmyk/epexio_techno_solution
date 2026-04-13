@@ -1,0 +1,146 @@
+/* --- SOLUTIONS COMMON STYLES --- */
+
+/* Hero & Tech Marquee */
+.hero-solutions {
+  min-height: 100vh;
+  padding: 120px 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.05), transparent 50%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #00ff88, #00d4ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.tech-marquee-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, white 15%, white 85%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, white 15%, white 85%, transparent 100%);
+}
+
+.tech-track {
+  display: flex;
+  width: max-content;
+  gap: 30px;
+  animation: techMarquee 40s linear infinite;
+}
+
+@keyframes techMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Solutions & Products Base */
+.custom-software-section { padding: 100px 0; }
+.custom-label { display: inline-block; padding: 5px 15px; background: rgba(6, 182, 212, 0.1); color: var(--accent); border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px; }
+.subtext { font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+.custom-content-wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; margin-top: 50px; }
+.solutions-stack { display: flex; flex-direction: column; gap: 20px; }
+.solution-block { display: flex; gap: 20px; align-items: flex-start; padding: 25px; background: rgba(30, 41, 59, 0.4); border: 1px solid var(--border); border-radius: 16px; transition: 0.3s; }
+.solution-block:hover { transform: translateX(10px); border-color: var(--accent); }
+.solution-icon-wrap { width: 50px; height: 50px; background: rgba(6, 182, 212, 0.1); color: var(--accent); display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 1.3rem; flex-shrink: 0; }
+.solution-info h4 { font-size: 1.2rem; margin-bottom: 8px; color: #fff; }
+.solution-info p { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
+
+.conversion-panel { background: linear-gradient(145deg, #1e293b, #0f172a); border: 1px solid var(--border); padding: 40px; border-radius: 24px; align-self: center; position: relative; overflow: hidden; }
+.conversion-panel::before { content: ''; position: absolute; top: 0; right: 0; width: 150px; height: 150px; background: var(--accent); filter: blur(80px); opacity: 0.15; z-index: 0; }
+.conversion-panel > * { position: relative; z-index: 1; }
+.conversion-panel h3 { font-size: 1.6rem; margin-bottom: 15px; color: #fff; }
+.conversion-panel p { color: var(--text-muted); margin-bottom: 25px; }
+.conversion-features { margin-bottom: 30px; list-style: none; padding: 0; }
+.conversion-features li { margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; color: #e2e8f0; }
+.conversion-features li i { color: var(--accent); }
+.btn-consultation { display: inline-block; width: 100%; text-align: center; padding: 15px; background: var(--accent); color: #fff; border-radius: 12px; font-weight: 600; transition: 0.3s; }
+.btn-consultation:hover { background: var(--accent-glow); transform: translateY(-3px); }
+.consult-meta { display: block; text-align: center; margin-top: 15px; font-size: 0.8rem; color: var(--text-muted); }
+
+/* Pricing */
+.pricing-section { padding: 100px 0; background: rgba(15, 23, 42, 0.5); }
+.pricing-badge { display: inline-block; padding: 5px 15px; background: rgba(34, 211, 238, 0.1); color: var(--accent-glow); border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 15px; letter-spacing: 1px; }
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+.pricing-card { background: rgba(30, 41, 59, 0.4); border: 1px solid var(--border); padding: 40px 30px; border-radius: 24px; text-align: left; transition: 0.3s; position: relative; display: flex; flex-direction: column; }
+.pricing-card:hover { transform: translateY(-10px); border-color: var(--accent); }
+.pricing-card.highlight { background: linear-gradient(180deg, rgba(30,41,59,0.8), rgba(15,23,42,0.9)); border-color: var(--accent); box-shadow: 0 10px 40px rgba(6, 182, 212, 0.1); transform: scale(1.05); }
+.pricing-card.highlight:hover { transform: scale(1.05) translateY(-5px); }
+.pricing-card h3 { font-size: 1.8rem; margin-bottom: 15px; color: #fff; }
+.pricing-desc { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 30px; min-height: 50px; }
+.pricing-features { list-style: none; padding: 0; margin-bottom: 40px; flex: 1; }
+.pricing-features li { margin-bottom: 15px; font-size: 0.95rem; color: #e2e8f0; display: flex; align-items: flex-start; gap: 10px; }
+.pricing-features li i { color: var(--accent); margin-top: 4px; }
+.btn-pricing, .btn-saas { display: block; width: 100%; text-align: center; padding: 14px; border-radius: 10px; font-weight: 600; transition: 0.3s; }
+.btn-pricing-outline { border: 1px solid var(--border); color: #fff; }
+.btn-pricing-outline:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); }
+
+/* What We Offer */
+.offer-section {
+  padding: 100px 0;
+  background-color: #0f172a;
+  position: relative;
+  z-index: 1;
+}
+
+.offer-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.offer-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.offer-card .icon-wrap {
+  width: 50px;
+  height: 50px;
+  background: rgba(6, 182, 212, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.offer-card h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.offer-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
