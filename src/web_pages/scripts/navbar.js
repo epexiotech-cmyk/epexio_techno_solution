@@ -39,12 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
-        // Also adjust logo link
+        // Adjust logo link and image
         const logo = placeholder.querySelector('.logo');
         if (logo) {
             const logoHref = logo.getAttribute('href');
             if (logoHref && !logoHref.startsWith('http') && !logoHref.startsWith('/')) {
                 logo.setAttribute('href', '../' + logoHref);
+            }
+            const logoImg = logo.querySelector('img');
+            if (logoImg) {
+                const src = logoImg.getAttribute('src');
+                if (src && !src.startsWith('http') && !src.startsWith('/')) {
+                    logoImg.setAttribute('src', '../' + src);
+                }
             }
         }
     }

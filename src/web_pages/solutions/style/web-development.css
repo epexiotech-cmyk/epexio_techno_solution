@@ -15,9 +15,9 @@
 }
 
 body {
-  background: radial-gradient(circle at 0% 0%, var(--bg-green-hint) 0%, transparent 70%),
-              radial-gradient(circle at 100% 100%, var(--bg-blue-hint) 0%, transparent 70%),
-              var(--bg-dark);
+  background: linear-gradient(-45deg, #020408, #051a14, #020408, #111111);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   background-attachment: fixed;
   color: #fff;
   overflow-x: hidden;
@@ -38,6 +38,12 @@ body {
   align-items: center;
   padding: 0 5%;
   z-index: 1;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Animated Glow Background */
@@ -1180,7 +1186,7 @@ body {
   /* Deeper background for maximum contrast */
   border-radius: 16px;
   padding: 25px;
-  font-family: 'Roboto Mono', 'Fira Code', 'Courier New', monospace;
+  font-family: var(--font-ui), monospace;
   font-size: 0.9rem;
   font-weight: 400;
   border: 1px solid rgba(0, 255, 136, 0.2);
@@ -1420,7 +1426,7 @@ body {
 }
 
 .codestring-seq span {
-  font-family: 'Roboto Mono', monospace;
+  font-family: var(--font-ui), monospace;
   color: var(--web-accent);
   font-size: 1rem;
   opacity: 0.4;
