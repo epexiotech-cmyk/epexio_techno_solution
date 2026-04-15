@@ -3,34 +3,340 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Automation Tools | Epexio Techno Solutions</title>
-    <meta name="description" content="Premium Automation Tools services by Epexio Techno Solutions." />
+    <title>Automation & Tools | Electric Intelligence | Epexio.in</title>
+    <meta name="description" content="Intelligent automation systems and business connectivity tools by Epexio Techno Solutions." />
     
     <link rel="icon" type="image/png" href="../Image/logo.png" />
+    
+    <!-- Base Styles -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../style/footer.css" />
-    <link rel="stylesheet" href="./style/solutions-common.css" />
-    <link rel="stylesheet" href="./style/automation-tools.css" />
+    
+    <!-- Electric Intelligence Foundation -->
+    <link rel="stylesheet" href="style/automation-tools.css" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
-  <body>
-    <!-- Navbar Placeholder -->
+  <body class="automation-page">
+    <!-- Global Atmosphere (Pulsing background system) -->
+    <div id="system-atmosphere">
+        <div class="system-node" style="top: 15%; left: 5%; animation-delay: 0s;">
+            <i class="fa-solid fa-robot"></i><span>AI Engine Active</span>
+        </div>
+        <div class="system-node" style="top: 60%; left: 2%; animation-delay: 2s;">
+            <i class="fa-solid fa-sync"></i><span>Workflow Synced</span>
+        </div>
+        <div class="system-node" style="top: 10%; right: 10%; animation-delay: 4s;">
+            <i class="fa-solid fa-microchip"></i><span>Data Processing</span>
+        </div>
+        <div class="system-node" style="bottom: 20%; right: 5%; animation-delay: 6s;">
+            <i class="fa-solid fa-shield-halved"></i><span>System Secured</span>
+        </div>
+    </div>
+
+    <!-- Navbar Container -->
     <div id="navbar-placeholder"></div>
 
-    <section class="hero-solutions" style="display: flex; align-items: center; justify-content: center; text-align: center; min-height: 100vh;">
-        <div class="container">
-            <h1 style="font-size: 4rem; font-weight: 800; margin-bottom: 20px;"><span class="text-gradient">Automation Tools</span></h1>
-            <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
-                Premium Automation Tools services designed for modern businesses. We are currently reimagining this page to serve you better.
-            </p>
-        </div>
-    </section>
+    <main id="automation-main">
+        <!-- PREMIUM SPLIT HERO -->
+        <section class="hero-split" id="hero">
+            <div class="container hero-layout">
+                <!-- Left Side: Strategic Content -->
+                <div class="hero-content">
+                    <div class="badge-tech mono-tag reveal">Intelligence Powered</div>
+                    <h1 class="reveal" style="transition-delay: 0.2s;">
+                        Automate the Work. <br>
+                        <span class="text-gradient-purple">Scale the Business.</span>
+                    </h1>
+                    <p class="hero-subheading reveal" style="transition-delay: 0.4s;">
+                        We build intelligent systems that eliminate repetitive tasks, reduce human error, and keep your operations running 24/7 — without manual effort.
+                    </p>
+                    
+                    <div class="hero-actions reveal" style="transition-delay: 0.6s;">
+                        <a href="#automate" class="btn-primary-purple pulse-btn">
+                            ⚡ Automate My Business
+                        </a>
+                        <a href="#use-cases" class="btn-secondary-outline">
+                            📊 Explore Use Cases
+                        </a>
+                    </div>
+                    
+                    <p class="micro-text reveal" style="transition-delay: 0.8s;">
+                        No-code confusion. No complexity. Just results.
+                    </p>
+                </div>
+
+                <!-- Right Side: Automation Flow Engine -->
+                <div class="hero-visual">
+                    <div class="flow-engine-wrap">
+                        <!-- Connecting Lines (SVG for precision) -->
+                        <svg class="flow-lines" viewBox="0 0 400 400">
+                            <path class="flow-path path-1" d="M50 100 L200 200" />
+                            <path class="flow-path path-2" d="M200 200 L350 100" />
+                            <path class="flow-path path-3" d="M200 200 L200 350" />
+                        </svg>
+
+                        <!-- Nodes -->
+                        <div class="node n-1 excel glass-board">
+                            <i class="fa-solid fa-file-excel"></i>
+                            <span class="node-label">Excel / Data</span>
+                            <div class="floating-bubble">Auto Sync</div>
+                        </div>
+
+                        <div class="node n-core system glass-board">
+                            <div class="core-glow"></div>
+                            <i class="fa-solid fa-microchip"></i>
+                            <span class="node-label">Processing</span>
+                            <div class="floating-bubble">Real-Time</div>
+                        </div>
+
+                        <div class="node n-2 whatsapp glass-board">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span class="node-label">WhatsApp</span>
+                            <div class="floating-bubble">No Delay</div>
+                        </div>
+
+                        <div class="node n-3 dashboard glass-board">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="node-label">Dashboard</span>
+                            <div class="floating-bubble">24/7 Active</div>
+                        </div>
+
+                        <!-- Data Particles (Animated via CSS) -->
+                        <div class="particle p-1"></div>
+                        <div class="particle p-2"></div>
+                        <div class="particle p-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM (CHAOS) SECTION -->
+        <section class="problem-chaos" id="problem">
+            <!-- Chaos Background Pattern -->
+            <div class="chaos-overlay"></div>
+            
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="mono-tag" style="color: var(--automation-purple);">THE PROBLEM</span>
+                    <h2>Still Running Your <br> <span class="text-gradient-purple">Business Manually?</span></h2>
+                    <p class="section-subtext">
+                        Manual processes slow you down, create errors, and limit your growth potential.
+                    </p>
+                </div>
+
+                <div class="chaos-grid">
+                    <!-- Chaos Card 1 -->
+                    <div class="chaos-card reveal physics-card" style="transition-delay: 0.1s;">
+                        <div class="card-glow"></div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <h3>Repetitive Tasks</h3>
+                        <p>Your team spends hours on the same manual work every day.</p>
+                    </div>
+
+                    <!-- Chaos Card 2 -->
+                    <div class="chaos-card reveal physics-card" style="transition-delay: 0.2s;">
+                        <div class="card-glow"></div>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                        <h3>Human Errors</h3>
+                        <p>Manual entries lead to mistakes that cost time and money.</p>
+                    </div>
+
+                    <!-- Chaos Card 3 -->
+                    <div class="chaos-card reveal physics-card" style="transition-delay: 0.3s;">
+                        <div class="card-glow"></div>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <h3>Delayed Comm</h3>
+                        <p>Updates and responses are not delivered instantly.</p>
+                    </div>
+
+                    <!-- Chaos Card 4 -->
+                    <div class="chaos-card reveal physics-card" style="transition-delay: 0.4s;">
+                        <div class="card-glow"></div>
+                        <i class="fa-solid fa-shuffle"></i>
+                        <h3>Scattered Systems</h3>
+                        <p>Data is spread across Excel, WhatsApp, and multiple tools.</p>
+                    </div>
+
+                    <!-- Chaos Card 5 -->
+                    <div class="chaos-card reveal physics-card" style="transition-delay: 0.5s;">
+                        <div class="card-glow"></div>
+                        <i class="fa-solid fa-eye-slash"></i>
+                        <h3>No Visibility</h3>
+                        <p>You don’t have clear insights into your business operations.</p>
+                    </div>
+                </div>
+
+                <div class="bottom-statement reveal">
+                    <p>You're not just losing time — <strong>you're losing growth.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SYSTEM DESIGN (CONNECTIVITY) SECTION -->
+        <section class="system-design" id="design">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="mono-tag" style="color: var(--automation-purple);">SYSTEM ARCHITECTURE</span>
+                    <h2>The Blueprint of <br> <span class="text-gradient-purple">Connectivity.</span></h2>
+                    <p class="section-subtext">
+                        We don't just add tools; we architect an ecosystem where every data point has a destination.
+                    </p>
+                </div>
+
+                <!-- Connectivity Centerpiece -->
+                <div class="connectivity-viz reveal">
+                    <div class="central-core">
+                        <div class="core-pulse-ring"></div>
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    
+                    <svg class="blueprint-svg" viewBox="0 0 800 400">
+                        <path class="connection-line l-1" d="M400 200 L150 100" />
+                        <path class="connection-line l-2" d="M400 200 L650 100" />
+                        <path class="connection-line l-3" d="M400 200 L150 300" />
+                        <path class="connection-line l-4" d="M400 200 L650 300" />
+                    </svg>
+
+                    <!-- Satellite Nodes -->
+                    <div class="sat-node s-1" title="Excel Database"><i class="fa-solid fa-table"></i></div>
+                    <div class="sat-node s-2" title="WhatsApp API"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="sat-node s-3" title="Cloud Storage"><i class="fa-solid fa-cloud"></i></div>
+                    <div class="sat-node s-4" title="CRM System"><i class="fa-solid fa-users-gear"></i></div>
+                </div>
+
+                <div class="design-grid">
+                    <div class="design-card reveal" style="transition-delay: 0.1s;">
+                        <div class="card-num">01</div>
+                        <h3>Unified Integration</h3>
+                        <p>Syncing Excel, WhatsApp, and CRM into one source of truth.</p>
+                    </div>
+                    <div class="design-card reveal" style="transition-delay: 0.2s;">
+                        <div class="card-num">02</div>
+                        <h3>Intelligent Logic</h3>
+                        <p>Custom workflows that process data and make decisions 24/7.</p>
+                    </div>
+                    <div class="design-card reveal" style="transition-delay: 0.3s;">
+                        <div class="card-num">03</div>
+                        <h3>Scalable Infrastructure</h3>
+                        <p>Built on cloud resilience that grows alongside your business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUTOMATION SOLUTION (FEATURE HUB) -->
+        <section class="automation-solution" id="solution">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="mono-tag">THE POWERHOUSE</span>
+                    <h2>Intelligence in <span class="text-gradient-purple">Action.</span></h2>
+                    <p class="section-subtext">
+                        Strategic systems engineered to handle the heavy lifting, so you can focus on scale.
+                    </p>
+                </div>
+
+                <div class="solution-grid">
+                    <!-- Card 1: Sales -->
+                    <div class="solution-card reveal" style="transition-delay: 0.1s;">
+                        <div class="status-indicator">
+                            <span class="pulse-dot"></span>
+                            <span class="status-label">Pipeline Sync Active</span>
+                        </div>
+                        <i class="fa-solid fa-bolt-lightning feat-icon"></i>
+                        <h3>Sales & CRM Power</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Auto-capture leads from WA/Forms</li>
+                            <li><i class="fa-solid fa-check"></i> Instant lead distribution & alerts</li>
+                            <li><i class="fa-solid fa-check"></i> Automated follow-up sequences</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2: Operations -->
+                    <div class="solution-card reveal highlighted-card" style="transition-delay: 0.2s;">
+                        <div class="status-indicator">
+                            <span class="pulse-dot"></span>
+                            <span class="status-label">Processing Core Ready</span>
+                        </div>
+                        <i class="fa-solid fa-gears feat-icon"></i>
+                        <h3>Operations Core</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Auto-invoice & PDF generation</li>
+                            <li><i class="fa-solid fa-check"></i> Real-time inventory & sheet sync</li>
+                            <li><i class="fa-solid fa-check"></i> Task board automated updates</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: Support -->
+                    <div class="solution-card reveal" style="transition-delay: 0.3s;">
+                        <div class="status-indicator">
+                            <span class="pulse-dot"></span>
+                            <span class="status-label">AI Support Online</span>
+                        </div>
+                        <i class="fa-solid fa-comments feat-icon"></i>
+                        <h3>Customer Intel</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> 24/7 WhatsApp AI Chatbots</li>
+                            <li><i class="fa-solid fa-check"></i> Instant ticket/status querying</li>
+                            <li><i class="fa-solid fa-check"></i> Automated feedback collection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTS / ROI SECTION -->
+        <section class="automation-roi" id="results">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="mono-tag" style="color: var(--automation-purple);">THE OUTCOME</span>
+                    <h2>The Intelligence <span class="text-gradient-purple">Dividend.</span></h2>
+                    <p class="section-subtext">
+                        Numbers don't lie. Our systems are engineered to pay for themselves through sheer operational efficiency.
+                    </p>
+                </div>
+
+                <div class="roi-stats-grid">
+                    <!-- Stat 1 -->
+                    <div class="stat-item reveal" style="transition-delay: 0.1s;">
+                        <span class="stat-value">80%</span>
+                        <span class="stat-label">Manual Labor Saved</span>
+                        <p class="stat-desc">Reclaim hundreds of hours every month previously spent on repetitive tasks.</p>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="stat-item reveal" style="transition-delay: 0.2s;">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">Data Consistency</span>
+                        <p class="stat-desc">Eliminate human error entirely through automated validation and syncing.</p>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="stat-item reveal" style="transition-delay: 0.3s;">
+                        <span class="stat-value">24/7</span>
+                        <span class="stat-label">System Resilience</span>
+                        <p class="stat-desc">Your business continues to process, sync, and support while you sleep.</p>
+                    </div>
+                </div>
+
+                <!-- Final CTA Hook -->
+                <div class="bottom-statement reveal" style="margin-top: 100px;">
+                    <p>Stop managing tasks. <strong>Start managing growth.</strong></p>
+                    <a href="#automate" class="btn-primary-purple" style="margin-top: 40px;">
+                        ⚡ Secure Your System Today
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Modular Footer -->
     <div id="footer-placeholder"></div>
 
+    <!-- Required Scripts -->
     <script src="../scripts/navbar.js" defer></script>
     <script src="../scripts/footer.js" defer></script>
+    <script src="../scripts/automation.js" defer></script>
   </body>
 </html>
