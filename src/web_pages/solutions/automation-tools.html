@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Automation & Tools | Electric Intelligence | Epexio.in</title>
-    <meta name="description" content="Intelligent automation systems and business connectivity tools by Epexio Techno Solutions." />
-    
+    <meta name="description"
+        content="Intelligent automation systems and business connectivity tools by Epexio Techno Solutions." />
+
     <link rel="icon" type="image/png" href="../Image/logo.png" />
-    
+
     <!-- Base Styles -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../style/footer.css" />
-    
+
     <!-- Electric Intelligence Foundation -->
     <link rel="stylesheet" href="style/automation-tools.css" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  </head>
-  <body class="automation-page">
+
+    <!-- Physics & Interactive Engines -->
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body class="automation-page">
     <!-- Global Atmosphere (Kinetic Glow Layer) -->
     <div id="system-atmosphere"></div>
 
@@ -37,9 +46,10 @@
                         <span class="text-gradient-purple">Scale the Business.</span>
                     </h1>
                     <p class="hero-subheading reveal" style="transition-delay: 0.4s;">
-                        We build intelligent systems that eliminate repetitive tasks, reduce human error, and keep your operations running 24/7 — without manual effort.
+                        We build intelligent systems that eliminate repetitive tasks, reduce human error, and keep your
+                        operations running 24/7 — without manual effort.
                     </p>
-                    
+
                     <div class="hero-actions reveal" style="transition-delay: 0.6s;">
                         <a href="#automate" class="btn-primary-purple pulse-btn">
                             ⚡ Automate My Business
@@ -48,7 +58,7 @@
                             📊 Explore Use Cases
                         </a>
                     </div>
-                    
+
                     <p class="micro-text reveal" style="transition-delay: 0.8s;">
                         No-code confusion. No complexity. Just results.
                     </p>
@@ -103,7 +113,7 @@
         <section class="problem-chaos" id="problem">
             <!-- Chaos Background Pattern -->
             <div class="chaos-overlay"></div>
-            
+
             <div class="container">
                 <div class="section-header reveal">
                     <span class="mono-tag" style="color: var(--automation-purple);">THE PROBLEM</span>
@@ -163,6 +173,65 @@
             </div>
         </section>
 
+        <!-- TRANSFORMATION (CHAOS TO SYSTEM) SECTION -->
+        <section class="transformation-section" id="transformation">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="mono-tag">THE TRANSFORMATION</span>
+                    <h2>We Turn Chaos Into <span class="text-gradient-purple">Systems.</span></h2>
+                    <p class="section-subtext">
+                        From manual work to intelligent automation — we design systems that run your business
+                        efficiently.
+                    </p>
+                </div>
+
+                <div class="transformation-split reveal">
+                    <!-- Left Side: Chaos -->
+                    <div class="trans-side side-before">
+                        <div class="side-label">Before</div>
+                        <ul class="trans-list">
+                            <li><i class="fa-solid fa-file-excel"></i> Excel sheets everywhere</li>
+                            <li><i class="fa-solid fa-keyboard"></i> Manual data entry</li>
+                            <li><i class="fa-solid fa-hourglass-half"></i> Delayed processes</li>
+                            <li><i class="fa-solid fa-triangle-exclamation"></i> Frequent errors</li>
+                            <li><i class="fa-solid fa-magnifying-glass-chart"></i> No clear tracking</li>
+                        </ul>
+                        <div class="chaos-particles-container" id="chaos-physics-container">
+                            <!-- Physics particles injected here via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Center Divider -->
+                    <div class="trans-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-glow"></div>
+                        <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <!-- Right Side: Automation -->
+                    <div class="trans-side side-after">
+                        <div class="side-label">After</div>
+                        <ul class="trans-list">
+                            <li><i class="fa-solid fa-wand-magic-sparkles"></i> Automated workflows</li>
+                            <li><i class="fa-solid fa-sync"></i> Instant data sync</li>
+                            <li><i class="fa-solid fa-bell"></i> Real-time notifications</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Error-free processing</li>
+                            <li><i class="fa-solid fa-gauge-high"></i> Live dashboards</li>
+                        </ul>
+                        <div class="system-grid-container" id="system-physics-container">
+                            <!-- Physics particles snap here via JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-statement reveal">
+                    <h3 class="statement-bold">Stop managing work. <span class="text-gradient-purple">Start running
+                            systems.</span></h3>
+                </div>
+            </div>
+        </section>
+
+
         <!-- SYSTEM DESIGN (CONNECTIVITY) SECTION -->
         <section class="system-design" id="design">
             <div class="container">
@@ -180,7 +249,7 @@
                         <div class="core-pulse-ring"></div>
                         <i class="fa-solid fa-brain"></i>
                     </div>
-                    
+
                     <svg class="blueprint-svg" viewBox="0 0 1000 600">
                         <path class="connection-line l-1" d="M150 100 L850 500" />
                         <path class="connection-line l-2" d="M850 100 L150 500" />
@@ -278,64 +347,343 @@
             </div>
         </section>
 
-        <!-- RESULTS / ROI SECTION -->
-        <section class="automation-roi" id="results">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="mono-tag" style="color: var(--automation-purple);">THE OUTCOME</span>
-                    <h2>The Intelligence <span class="text-gradient-purple">Dividend.</span></h2>
-                    <p class="section-subtext">
-                        Numbers don't lie. Our systems are engineered to pay for themselves through sheer operational efficiency.
-                    </p>
+        <!-- USE CASES: REAL PHYSICS INTERACTION SECTION -->
+        <section id="use-cases-physics" class="use-cases-physics-section">
+            <div class="physics-sticky-container">
+                <canvas id="physics-canvas"></canvas>
+
+                <div class="container physics-overlay">
+                    <div class="physics-header reveal">
+                        <span class="mono-tag">THE PLAYGROUND</span>
+                        <h2>Real Problems. <br> <span class="text-gradient-purple">Physical Solutions.</span></h2>
+                        <p class="section-subtext">We don&rsquo;t design screens. We engineer systems that move.</p>
+                    </div>
+
+                    <div class="physics-content-area">
+                        <!-- Use Case Items -->
+                        <div class="physics-case-item active" data-index="0">
+                            <div class="case-meta">
+                                <span class="case-num">01</span>
+                                <span class="case-label">Operations</span>
+                            </div>
+                            <h3>Operations Automation</h3>
+                            <p class="micro-copy">From chaos &rarr; control</p>
+                        </div>
+
+                        <div class="physics-case-item" data-index="1">
+                            <div class="case-meta">
+                                <span class="case-num">02</span>
+                                <span class="case-label">Sales</span>
+                            </div>
+                            <h3>Sales / Lead Flow</h3>
+                            <p class="micro-copy">Pulls the right data automatically</p>
+                        </div>
+
+                        <div class="physics-case-item" data-index="2">
+                            <div class="case-meta">
+                                <span class="case-num">03</span>
+                                <span class="case-label">Data</span>
+                            </div>
+                            <h3>Data Management</h3>
+                            <p class="micro-copy">Flows without friction</p>
+                        </div>
+
+                        <div class="physics-case-item" data-index="3">
+                            <div class="case-meta">
+                                <span class="case-num">04</span>
+                                <span class="case-label">Integration</span>
+                            </div>
+                            <h3>Multi-System Integration</h3>
+                            <p class="micro-copy">Everything stays in sync</p>
+                        </div>
+
+                        <div class="physics-case-item" data-index="4">
+                            <div class="case-meta">
+                                <span class="case-num">05</span>
+                                <span class="case-label">Reliability</span>
+                            </div>
+                            <h3>Error Reduction</h3>
+                            <p class="micro-copy">Errors don&rsquo;t happen</p>
+                        </div>
+
+                        <div class="physics-case-item" data-index="5">
+                            <div class="case-meta">
+                                <span class="case-num">06</span>
+                                <span class="case-label">Field</span>
+                            </div>
+                            <h3>Field Operations</h3>
+                            <p class="micro-copy">Field to system. Instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REIMAGINED: WHAT WE AUTOMATE ECOSYSTEM -->
+        <section class="what-we-automate-scroll-container" id="what-we-automate">
+            <div class="ecosystem-sticky-wrapper">
+                <!-- Canvas for Physics Simulation -->
+                <canvas id="ecosystem-canvas"></canvas>
+
+                <div class="container ecosystem-container">
+                    <div class="section-header reveal">
+                        <span class="mono-tag">WHAT WE AUTOMATE</span>
+                        <h2>Intelligent Ecosystem <br> <span class="text-gradient-purple">of Automation.</span></h2>
+                        <p class="section-subtext">
+                            </br></br></br></br>Scroll through our Automation Modules</br>to see how we unify your
+                            business.
+                        </p>
+                        <div class="bottom-hint">
+                            <p>"If it can be done manually,</br>It can be automated."</p>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Overlay for Content -->
+                    <div id="ecosystem-panel" class="ecosystem-panel">
+                        <div class="panel-content">
+                            <div id="panel-icon" class="panel-icon"></div>
+                            <h3 id="panel-title">Select a Module</h3>
+                            <p id="panel-desc">Hover or click on a floating node to explore our automation capabilities.
+                            </p>
+                            <div class="panel-stats">
+                                <div class="p-stat"><span>Efficiency</span>
+                                    <div class="stat-bar">
+                                        <div class="bar-fill" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="p-stat"><span>Scalability</span>
+                                    <div class="stat-bar">
+                                        <div class="bar-fill" style="width: 98%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hidden Data for JS -->
+                    <div id="ecosystem-data" style="display: none;">
+                        <div class="node-data" data-id="1" data-title="Business Process Automation"
+                            data-desc="Automate repetitive workflows and eliminate manual tasks completely."
+                            data-icon="fa-solid fa-arrows-to-dot" data-color="#8A2BE2"></div>
+                        <div class="node-data" data-id="2" data-title="CRM & Data Management"
+                            data-desc="Organize and manage your data with structured, scalable systems."
+                            data-icon="fa-solid fa-database" data-color="#4D96FF"></div>
+                        <div class="node-data" data-id="3" data-title="WhatsApp & Notification"
+                            data-desc="Send instant updates, alerts, and messages automatically."
+                            data-icon="fa-brands fa-whatsapp" data-color="#00FF88"></div>
+                        <div class="node-data" data-id="4" data-title="Report Generation Systems"
+                            data-desc="Generate accurate reports automatically without manual effort."
+                            data-icon="fa-solid fa-file-invoice" data-color="#FF4D4D"></div>
+                        <div class="node-data" data-id="5" data-title="Cloud Sync & Management"
+                            data-desc="Automatically upload, organize, and access files in real-time."
+                            data-icon="fa-solid fa-cloud-arrow-up" data-color="#FFD93D"></div>
+                        <div class="node-data" data-id="6" data-title="Custom Dashboards"
+                            data-desc="Get real-time insights with visually clear and powerful dashboards."
+                            data-icon="fa-solid fa-chart-pie" data-color="#FF8E3C"></div>
+                        <div class="node-data" data-id="7" data-title="Workflow Automation"
+                            data-desc="Connect tools and processes into one seamless automated flow."
+                            data-icon="fa-solid fa-network-wired" data-color="#00D2FF"></div>
+                        <div class="node-data" data-id="8" data-title="AI-Based Automation"
+                            data-desc="Leverage intelligent systems to make smarter business decisions."
+                            data-icon="fa-solid fa-brain" data-color="#FF00FF"></div>
+                        <div class="node-data" data-id="9" data-title="API & API Integration"
+                            data-desc="Bridge the gap between your favorite software and custom tools."
+                            data-icon="fa-solid fa-link" data-color="#A2FF00"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- HOW IT WORKS: PHYSICS-BASED PROCESS FLOW -->
+        <section id="how-it-works" class="process-section">
+            <canvas id="process-canvas"></canvas>
+
+            <div class="container process-container">
+                <div class="section-header center reveal">
+                    <span class="mono-tag">OUR METHODOLOGY</span>
+                    <h2>From Manual Chaos <br> <span class="text-gradient-purple">to Intelligent Systems.</span></h2>
+                    <p class="section-subtext">A structured approach to transform your business into an automated
+                        engine.</p>
                 </div>
 
-                <div class="roi-stats-grid">
-                    <!-- Stat 1 -->
-                    <div class="stat-monitor reveal" data-target="80" style="transition-delay: 0.1s;">
-                        <div class="monitor-scanline"></div>
-                        <div class="monitor-header">
-                            <span class="monitor-tag">AUTO_RECLAMATION</span>
-                            <span class="monitor-pulse"></span>
-                        </div>
-                        <span class="stat-value">0%</span>
-                        <div class="stat-progress"><div class="progress-fill"></div></div>
-                        <span class="stat-label">Manual Labor Saved</span>
-                        <p class="stat-desc">Reclaim hundreds of hours every month previously spent on repetitive tasks.</p>
-                    </div>
-
-                    <!-- Stat 2 -->
-                    <div class="stat-monitor reveal" data-target="100" style="transition-delay: 0.2s;">
-                        <div class="monitor-scanline"></div>
-                        <div class="monitor-header">
-                            <span class="monitor-tag">DATA_INTEGRITY</span>
-                            <span class="monitor-pulse"></span>
-                        </div>
-                        <span class="stat-value">0%</span>
-                        <div class="stat-progress"><div class="progress-fill"></div></div>
-                        <span class="stat-label">Data Consistency</span>
-                        <p class="stat-desc">Eliminate human error entirely through automated validation and syncing.</p>
-                    </div>
-
-                    <!-- Stat 3 -->
-                    <div class="stat-monitor reveal" data-target="24" style="transition-delay: 0.3s;">
-                        <div class="monitor-scanline"></div>
-                        <div class="monitor-header">
-                            <span class="monitor-tag">CORE_UPTIME</span>
-                            <span class="monitor-pulse"></span>
-                        </div>
-                        <span class="stat-value">0/7</span>
-                        <div class="stat-progress"><div class="progress-fill"></div></div>
-                        <span class="stat-label">System Resilience</span>
-                        <p class="stat-desc">Your business continues to process, sync, and support while you sleep.</p>
-                    </div>
+                <!-- Hidden Data for JS Physics Engine -->
+                <div id="process-data" style="display: none;">
+                    <div class="process-node" data-step="1" data-title="Analyze"
+                        data-desc="We study your current workflow and identify inefficiencies."
+                        data-icon="fa-solid fa-magnifying-glass-chart"></div>
+                    <div class="process-node" data-step="2" data-title="Design"
+                        data-desc="We architect a smart automation system tailored to your business."
+                        data-icon="fa-solid fa-drafting-compass"></div>
+                    <div class="process-node" data-step="3" data-title="Build"
+                        data-desc="We develop and integrate the automation tools and workflows."
+                        data-icon="fa-solid fa-microchip"></div>
+                    <div class="process-node" data-step="4" data-title="Deploy"
+                        data-desc="We launch the system and connect it with your operations."
+                        data-icon="fa-solid fa-rocket"></div>
+                    <div class="process-node" data-step="5" data-title="Optimize"
+                        data-desc="We monitor, improve, and scale the system continuously."
+                        data-icon="fa-solid fa-gauge-high"></div>
                 </div>
 
-                <!-- Final CTA Hook -->
-                <div class="bottom-statement reveal">
-                    <p>Stop managing tasks. <strong>Start managing growth.</strong></p>
-                    <a href="#automate" class="btn-primary-purple">
-                        ⚡ Secure Your System Today
-                    </a>
+                <div class="process-statement reveal">
+                    <p>"A systemized approach to building automation that actually works."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SYSTEM CORE REVEAL: THE TECH STACK ENGINE -->
+        <section id="system-core-section" class="system-core-section">
+            <div class="core-sticky-container">
+                <canvas id="core-canvas"></canvas>
+
+                <div class="container core-overlay">
+                    <div class="core-header reveal">
+                        <span class="mono-tag">THE ENGINE BEHIND THE SYSTEM</span>
+                        <h2>The Engine Behind <br> <span class="text-gradient-purple">the System.</span></h2>
+                        <p class="section-subtext">Precision-built with technologies that don&rsquo;t fail under
+                            pressure.</p>
+                    </div>
+
+                    <div class="core-ui-layer">
+                        <div id="module-details" class="module-details-panel">
+                            <div class="panel-inner">
+                                <span class="layer-name">PROCESSING CORE</span>
+                                <h3 class="module-name">Backend Engine</h3>
+                                <div class="tech-tags">
+                                    <span>Node.js</span>
+                                    <span>Python</span>
+                                    <span>Cloud Functions</span>
+                                </div>
+                                <p class="module-desc">Where logic executes at scale.</p>
+                                <div class="module-meta">
+                                    <span><i class="fa-solid fa-bolt"></i> 99.9% Uptime</span>
+                                    <span><i class="fa-solid fa-shield-halved"></i> Secure API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="core-bottom reveal">
+                        <p class="core-statement">We don&rsquo;t choose trendy tech. <br> <span>We choose what
+                                won&rsquo;t break your business.</span></p>
+                        <a href="#automate" class="btn-primary-purple btn-magnetic btn-core-cta">
+                            See What We Can Build
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI ENGINE: TIME TO VALUE CONVERSION -->
+        <section class="roi-engine-section" id="roi-engine">
+            <div class="roi-sticky-container">
+                <canvas id="roi-engine-canvas"></canvas>
+
+                <div class="container roi-overlay">
+                    <div class="roi-header reveal">
+                        <span class="mono-tag" style="color: #FFD700;">SYSTEM COMPARISON</span>
+                        <h2>See The Difference <br> <span class="text-gradient-gold">Automation Makes.</span></h2>
+                        <p class="section-subtext">Same business. Two completely different outcomes.</p>
+                        
+                        <!-- ENERGY COMPARISON TOGGLE -->
+                        <div class="comparison-toggle-wrap">
+                            <div class="toggle-labels">
+                                <span class="t-label manual active">
+                                    <svg class="mood-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M8 9h.01M16 9h.01M8 15h8"></path>
+                                    </svg>
+                                    WITHOUT AUTOMATION
+                                </span>
+                                <span class="t-label automated">
+                                    <svg class="mood-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M8 9h.01M16 9h.01M8 15c1 1.5 3 2.5 4 2.5s3-1 4-2.5"></path>
+                                    </svg>
+                                    WITH AUTOMATION
+                                </span>
+                            </div>
+                            <div class="energy-switch" id="roi-state-toggle">
+                                <div class="switch-slider">
+                                    <div class="slider-face manual-face">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M8 9h.01M16 9h.01M8 15h8"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="slider-face automated-face">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M8 9h.01M16 9h.01M8 15c1 1.5 3 2.5 4 2.5s3-1 4-2.5"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="toggle-subline">This is the cost of staying manual vs upgrading your system.</p>
+                                    <div class="roi-metrics-layer">
+                        <!-- TIME METRIC -->
+                        <div class="metric-stack" id="metric-time">
+                            <div class="metric-card">
+                                <span class="m-val flicker">+0 hrs</span>
+                                <span class="m-label">Hours Saved / Month</span>
+                            </div>
+                            <div class="status-detail-box">
+                                <div class="detail-content manual-text">Field data collection takes 2+ days via manual entry.</div>
+                                <div class="detail-content auto-text">Instant mobile uploads & real-time sync across all devices.</div>
+                            </div>
+                        </div>
+
+                        <!-- COST METRIC -->
+                        <div class="metric-stack" id="metric-cost">
+                            <div class="metric-card">
+                                <span class="m-val flicker">0%</span>
+                                <span class="m-label">Cost Reduced</span>
+                            </div>
+                            <div class="status-detail-box">
+                                <div class="detail-content manual-text">High labor costs spent on repetitive data processing.</div>
+                                <div class="detail-content auto-text">AI-driven validation reduces processing overhead by 40%.</div>
+                            </div>
+                        </div>
+
+                        <!-- EFFICIENCY METRIC -->
+                        <div class="metric-stack" id="metric-efficiency">
+                            <div class="metric-card">
+                                <span class="m-val flicker">0%</span>
+                                <span class="m-label">Efficiency Boost</span>
+                            </div>
+                            <div class="status-detail-box">
+                                <div class="detail-content manual-text">Fragmented workflows with frequent bottlenecks.</div>
+                                <div class="detail-content auto-text">Synchronized pipeline with 2.4x higher throughput.</div>
+                            </div>
+                        </div>
+
+                        <!-- ERROR METRIC -->
+                        <div class="metric-stack" id="metric-error">
+                            <div class="metric-card">
+                                <span class="m-val flicker">HIGH (30%)</span>
+                                <span class="m-label">Error Rate</span>
+                            </div>
+                            <div class="status-detail-box">
+                                <div class="detail-content manual-text">Human-driven entry leads to 30% data inaccuracy.</div>
+                                <div class="detail-content auto-text">Automated checksums & validation reduce errors to 5%.</div>
+                            </div>
+                        </div>
+                    </div>
+      </div>
+
+                    <div class="roi-footer reveal">
+                        <div class="pain-trigger-glitch" id="pain-trigger">
+                            <span class="glitch-text" id="dynamic-trigger-text">Manual processes. Delays. Human errors.</span>
+                        </div>
+                        <div class="roi-cta-wrap">
+                            <button class="btn-primary-purple btn-magnetic calculate-roi-trigger" id="roi-dynamic-cta">
+                                Stop Losing Time & Money
+                            </button>
+                            <p class="cta-subtitle">Switch to "WITH AUTOMATION" to see the profit shift</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -345,8 +693,94 @@
     <div id="footer-placeholder"></div>
 
     <!-- Required Scripts -->
+    <!-- ROI CALCULATOR MODAL -->
+    <div id="roi-modal" class="roi-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <span class="mono-tag">ROI ASSESSMENT</span>
+                <h3>Calculate Your <span class="text-gradient-gold">Potential.</span></h3>
+                <p>Enter your current operational metrics to see how much automation can save you.</p>
+            </div>
+
+            <div class="calculator-grid">
+                <div class="input-group slider-group">
+                    <div class="label-row">
+                        <label>Monthly Manual Hours</label>
+                        <span class="slider-val" id="val-hours">216 hrs</span>
+                    </div>
+                    <input type="range" id="input-hours" min="10" max="1000" value="216">
+                </div>
+                <div class="input-group slider-group">
+                    <div class="label-row">
+                        <label>Avg. Hourly Rate (₹)</label>
+                        <span class="slider-val" id="val-rate">₹108</span>
+                    </div>
+                    <input type="range" id="input-rate" min="10" max="250" value="108">
+                </div>
+                <div class="input-group slider-group">
+                    <div class="label-row">
+                        <label>Manual Error Rate (%)</label>
+                        <span class="slider-val" id="val-error">9%</span>
+                    </div>
+                    <input type="range" id="input-error" min="1" max="50" value="9">
+                </div>
+            </div>
+
+            <div class="roi-results-dashboard">
+                <div class="res-card">
+                    <span class="res-label">Annual Time Reclaimed</span>
+                    <span class="res-val" id="res-time">0 Hrs</span>
+                </div>
+                <div class="res-card highlighted">
+                    <span class="res-label">Annual Savings Potential</span>
+                    <span class="res-val" id="res-savings">₹0</span>
+                </div>
+                <div class="res-card recovery-card">
+                    <span class="res-label">Investment Recovery</span>
+                    <span class="res-val" id="res-recovery">34 Days</span>
+                </div>
+            </div>
+
+            <div class="logic-breakdown">
+                <div class="logic-header">
+                    <i class="fas fa-microchip"></i>
+                    <span>System Methodology</span>
+                </div>
+                <div class="logic-grid">
+                    <div class="logic-item">
+                        <strong>70% Efficiency</strong>
+                        <p>Projected manual task displacement by AI/Automation.</p>
+                    </div>
+                    <div class="logic-item">
+                        <strong>80% Error Drop</strong>
+                        <p>Reduction in human-driven operational error costs.</p>
+                    </div>
+                    <div class="logic-item">
+                        <strong>Dynamic ROI</strong>
+                        <p>Payback period scales with your operational volume.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <p>This estimate is based on your specific operational load.</p>
+                <a href="#contact" class="btn-primary-purple btn-magnetic modal-cta">
+                    Start Saving Money
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script src="../scripts/navbar.js" defer></script>
     <script src="../scripts/footer.js" defer></script>
     <script src="../scripts/automation.js" defer></script>
-  </body>
+    <script src="../scripts/ecosystem.js" defer></script>
+    <script src="../scripts/process-flow.js" defer></script>
+    <script src="../scripts/use-cases-physics.js" defer></script>
+    <script src="../scripts/system-core.js" defer></script>
+    <script src="../scripts/roi-engine.js" defer></script>
+</body>
+
 </html>

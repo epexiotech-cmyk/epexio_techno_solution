@@ -265,9 +265,108 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- TRANSFORMATION PHYSICS ENGINE ---
+    class TransformationPhysics {
+        constructor() {
+            this.section = document.querySelector('.transformation-section');
+            if (!this.section) return;
+
+            this.chaosContainer = document.getElementById('chaos-physics-container');
+            this.systemContainer = document.getElementById('system-physics-container');
+            this.particles = [];
+            this.numParticles = 40; // Increased for better visual density
+            this.hasStarted = false;
+
+            this.init();
+        }
+
+        init() {
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting && !this.hasStarted) {
+                    this.hasStarted = true;
+                    this.createParticles();
+                    this.animate();
+                }
+            }, { threshold: 0.2 });
+
+            observer.observe(this.section);
+        }
+
+        createParticles() {
+            for (let i = 0; i < this.numParticles; i++) {
+                const p = {
+                    el: document.createElement('div'),
+                    x: Math.random() * 70 + 15,
+                    y: Math.random() * 70 + 15,
+                    vx: (Math.random() - 0.5) * 1.2, // Slightly faster chaos
+                    vy: (Math.random() - 0.5) * 1.2,
+                    targetX: (i % 8) * 10 + 15, // Grid positions for right side
+                    targetY: Math.floor(i / 8) * 15 + 20,
+                    phase: 'chaos',
+                    delay: Math.random() * 3000 // Staggered start over 3 seconds
+                };
+
+                p.el.className = 'trans-particle';
+                this.chaosContainer.appendChild(p.el);
+                this.particles.push(p);
+            }
+        }
+
+        animate() {
+            const step = () => {
+                this.particles.forEach((p, i) => {
+                    if (p.phase === 'chaos') {
+                        // Chaotic Movement
+                        p.x += p.vx;
+                        p.y += p.vy;
+
+                        // Drift back if getting too close to edges
+                        if (p.x < 5 || p.x > 95) p.vx *= -1;
+                        if (p.y < 5 || p.y > 95) p.vy *= -1;
+
+                        // Transition trigger: Move towards center after delay
+                        if (this.hasStarted && performance.now() > (this.startTime || (this.startTime = performance.now())) + p.delay) {
+                            p.vx += 0.08; // Stronger force towards right
+                            if (p.x > 100) {
+                                p.phase = 'automated';
+                                p.x = -10; // Start slightly off-left of right container
+                                p.el.classList.add('automated');
+                                this.systemContainer.appendChild(p.el);
+                            }
+                        }
+                    } else {
+                        // Spring Physics for Grid Snapping
+                        const dx = p.targetX - p.x;
+                        const dy = p.targetY - p.y;
+                        
+                        p.vx += dx * 0.025; // Slightly stiffer stiffness
+                        p.vy += dy * 0.025;
+                        p.vx *= 0.82; // Slightly more damping
+                        p.vy *= 0.82;
+
+                        p.x += p.vx;
+                        p.y += p.vy;
+                    }
+
+                    p.el.style.left = `${p.x}%`;
+                    p.el.style.top = `${p.y}%`;
+                    p.el.style.transform = `rotate(${p.x * 3}deg)`;
+                });
+
+                requestAnimationFrame(step);
+            };
+
+            requestAnimationFrame(step);
+        }
+    }
+
     // Initialize systems
     if (document.querySelector('.connectivity-viz')) {
         new ArchitectureAnimator();
     }
+    if (document.querySelector('.transformation-section')) {
+        new TransformationPhysics();
+    }
     new ROICounter();
 });
+
